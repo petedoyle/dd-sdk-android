@@ -17,7 +17,7 @@ import com.datadog.android.tracing.internal.domain.event.SpanEventMapperWrapper
 import com.datadog.android.tracing.internal.domain.event.SpanMapperSerializer
 import com.datadog.android.tracing.internal.net.TracesOkHttpUploaderV2
 import com.datadog.android.utils.forge.Configurator
-import com.datadog.opentracing.DDSpan
+import co.fast.android.internal.datadog.opentracing.DDSpan
 import com.datadog.tools.unit.extensions.ApiLevelExtension
 import com.datadog.tools.unit.extensions.TestConfigurationExtension
 import com.datadog.tools.unit.getFieldValue

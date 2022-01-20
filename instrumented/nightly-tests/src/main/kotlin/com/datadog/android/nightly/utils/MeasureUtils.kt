@@ -6,7 +6,7 @@
 
 package com.datadog.android.nightly.utils
 
-import com.datadog.opentracing.DDTracer
+import co.fast.android.internal.datadog.opentracing.DDTracer
 import io.opentracing.util.GlobalTracer
 import java.util.concurrent.TimeUnit
 

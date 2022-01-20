@@ -11,7 +11,7 @@ import com.datadog.android.core.internal.persistence.Serializer
 import com.datadog.android.event.EventMapper
 import com.datadog.android.tracing.model.SpanEvent
 import com.datadog.android.utils.forge.Configurator
-import com.datadog.opentracing.DDSpan
+import co.fast.android.internal.datadog.opentracing.DDSpan
 import com.nhaarman.mockitokotlin2.whenever
 import fr.xgouchet.elmyr.annotation.Forgery
 import fr.xgouchet.elmyr.annotation.StringForgery

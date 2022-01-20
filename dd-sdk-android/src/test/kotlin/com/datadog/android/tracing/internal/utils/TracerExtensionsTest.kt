@@ -8,8 +8,8 @@ package com.datadog.android.tracing.internal.utils
 
 import com.datadog.android.tracing.AndroidTracer
 import com.datadog.android.utils.forge.Configurator
-import com.datadog.opentracing.DDSpan
-import com.datadog.opentracing.scopemanager.ContextualScopeManager
+import co.fast.android.internal.datadog.opentracing.DDSpan
+import co.fast.android.internal.datadog.opentracing.scopemanager.ContextualScopeManager
 import com.datadog.tools.unit.getStaticValue
 import fr.xgouchet.elmyr.Forge
 import fr.xgouchet.elmyr.junit5.ForgeConfiguration

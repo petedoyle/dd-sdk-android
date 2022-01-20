@@ -7,8 +7,8 @@
 package com.datadog.android.tracing.internal.data
 
 import com.datadog.android.core.internal.persistence.DataWriter
-import com.datadog.opentracing.DDSpan
-import com.datadog.trace.common.writer.Writer
+import co.fast.android.internal.datadog.opentracing.DDSpan
+import co.fast.android.internal.datadog.trace.common.writer.Writer
 
 internal class TraceWriter(
     val writer: DataWriter<DDSpan>

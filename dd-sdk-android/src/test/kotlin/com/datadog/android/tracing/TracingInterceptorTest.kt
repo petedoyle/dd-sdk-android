@@ -18,14 +18,14 @@ import com.datadog.android.utils.config.ApplicationContextTestConfiguration
 import com.datadog.android.utils.config.CoreFeatureTestConfiguration
 import com.datadog.android.utils.forge.Configurator
 import com.datadog.android.utils.mockDevLogHandler
-import com.datadog.opentracing.DDSpanContext
-import com.datadog.opentracing.DDTracer
+import co.fast.android.internal.datadog.opentracing.DDSpanContext
+import co.fast.android.internal.datadog.opentracing.DDTracer
 import com.datadog.tools.unit.annotations.TestConfigurationsProvider
 import com.datadog.tools.unit.extensions.TestConfigurationExtension
 import com.datadog.tools.unit.extensions.config.TestConfiguration
 import com.datadog.tools.unit.invokeMethod
 import com.datadog.tools.unit.setStaticValue
-import com.datadog.trace.api.interceptor.MutableSpan
+import co.fast.android.internal.datadog.trace.api.interceptor.MutableSpan
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.anyOrNull
 import com.nhaarman.mockitokotlin2.argumentCaptor

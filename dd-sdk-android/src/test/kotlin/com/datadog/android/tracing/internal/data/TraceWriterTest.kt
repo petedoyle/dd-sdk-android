@@ -10,11 +10,11 @@ import com.datadog.android.core.internal.persistence.DataWriter
 import com.datadog.android.rum.GlobalRum
 import com.datadog.android.utils.config.GlobalRumMonitorTestConfiguration
 import com.datadog.android.utils.forge.Configurator
-import com.datadog.opentracing.DDSpan
+import co.fast.android.internal.datadog.opentracing.DDSpan
 import com.datadog.tools.unit.annotations.TestConfigurationsProvider
 import com.datadog.tools.unit.extensions.TestConfigurationExtension
 import com.datadog.tools.unit.extensions.config.TestConfiguration
-import com.datadog.trace.api.DDTags
+import co.fast.android.internal.datadog.trace.api.DDTags
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.verifyZeroInteractions
 import fr.xgouchet.elmyr.Forge

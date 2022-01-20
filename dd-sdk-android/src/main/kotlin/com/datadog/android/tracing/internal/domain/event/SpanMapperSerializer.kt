@@ -10,7 +10,7 @@ import com.datadog.android.core.internal.Mapper
 import com.datadog.android.core.internal.persistence.Serializer
 import com.datadog.android.event.EventMapper
 import com.datadog.android.tracing.model.SpanEvent
-import com.datadog.opentracing.DDSpan
+import co.fast.android.internal.datadog.opentracing.DDSpan
 
 internal class SpanMapperSerializer(
     private val legacyMapper: Mapper<DDSpan, SpanEvent>,

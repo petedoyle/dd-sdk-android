@@ -15,9 +15,9 @@ import com.datadog.android.rum.internal.RumFeature
 import com.datadog.android.tracing.internal.TracesFeature
 import com.datadog.android.tracing.internal.data.TraceWriter
 import com.datadog.android.tracing.internal.handlers.AndroidSpanLogsHandler
-import com.datadog.opentracing.DDTracer
-import com.datadog.opentracing.LogHandler
-import com.datadog.trace.api.Config
+import co.fast.android.internal.datadog.opentracing.DDTracer
+import co.fast.android.internal.datadog.opentracing.LogHandler
+import co.fast.android.internal.datadog.trace.api.Config
 import io.opentracing.Span
 import io.opentracing.log.Fields
 import java.security.SecureRandom

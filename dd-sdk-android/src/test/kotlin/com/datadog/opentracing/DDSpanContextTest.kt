@@ -6,11 +6,15 @@
 
 package com.datadog.opentracing
 
+import co.fast.android.internal.datadog.opentracing.DDSpan
+import co.fast.android.internal.datadog.opentracing.DDSpanContext
+import co.fast.android.internal.datadog.opentracing.DDTracer
+import co.fast.android.internal.datadog.opentracing.PendingTrace
 import com.datadog.android.utils.forge.Configurator
 import com.datadog.opentracing.assertj.DDSpanContextAssert.Companion.assertThat
-import com.datadog.opentracing.decorators.AbstractDecorator
-import com.datadog.trace.api.DDTags
-import com.datadog.trace.api.sampling.PrioritySampling
+import co.fast.android.internal.datadog.opentracing.decorators.AbstractDecorator
+import co.fast.android.internal.datadog.trace.api.DDTags
+import co.fast.android.internal.datadog.trace.api.sampling.PrioritySampling
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
@@ -100,23 +104,24 @@ internal class DDSpanContextTest {
             forge.anAlphabeticalString() to forge.anAlphaNumericalString()
         }
         fakeServiceNamesMapping = emptyMap()
-        testedContext = DDSpanContext(
-            fakeTraceId,
-            fakeSpanId,
-            fakeParentId,
-            fakeServiceName,
-            fakeOperationName,
-            fakeResourceName,
-            PrioritySampling.UNSET,
-            fakeOrigin,
-            fakeBaggageItems,
-            fakeErrorFlag,
-            fakeSpanType,
-            fakeTags,
-            mockedPendingTrace,
-            mockedTracer,
-            fakeServiceNamesMapping
-        )
+        testedContext =
+            DDSpanContext(
+                fakeTraceId,
+                fakeSpanId,
+                fakeParentId,
+                fakeServiceName,
+                fakeOperationName,
+                fakeResourceName,
+                PrioritySampling.UNSET,
+                fakeOrigin,
+                fakeBaggageItems,
+                fakeErrorFlag,
+                fakeSpanType,
+                fakeTags,
+                mockedPendingTrace,
+                mockedTracer,
+                fakeServiceNamesMapping
+            )
     }
 
     @AfterEach
@@ -161,23 +166,24 @@ internal class DDSpanContextTest {
     @Test
     fun `M not add the origin as tag W null`() {
         // WHEN
-        testedContext = DDSpanContext(
-            fakeTraceId,
-            fakeSpanId,
-            fakeParentId,
-            fakeServiceName,
-            fakeOperationName,
-            fakeResourceName,
-            fakeSamplingPriority,
-            null,
-            fakeBaggageItems,
-            fakeErrorFlag,
-            fakeSpanType,
-            fakeTags,
-            mockedPendingTrace,
-            mockedTracer,
-            fakeServiceNamesMapping
-        )
+        testedContext =
+            DDSpanContext(
+                fakeTraceId,
+                fakeSpanId,
+                fakeParentId,
+                fakeServiceName,
+                fakeOperationName,
+                fakeResourceName,
+                fakeSamplingPriority,
+                null,
+                fakeBaggageItems,
+                fakeErrorFlag,
+                fakeSpanType,
+                fakeTags,
+                mockedPendingTrace,
+                mockedTracer,
+                fakeServiceNamesMapping
+            )
 
         // THEN
         assertThat(testedContext).doesNotContainTags(DDSpanContext.ORIGIN_KEY)
@@ -186,23 +192,24 @@ internal class DDSpanContextTest {
     @Test
     fun `M add sampling W initialised {samplingPriority != UNSET}`() {
         // WHEN
-        testedContext = DDSpanContext(
-            fakeTraceId,
-            fakeSpanId,
-            fakeParentId,
-            fakeServiceName,
-            fakeOperationName,
-            fakeResourceName,
-            fakeSamplingPriority,
-            fakeOrigin,
-            fakeBaggageItems,
-            fakeErrorFlag,
-            fakeSpanType,
-            fakeTags,
-            mockedPendingTrace,
-            mockedTracer,
-            fakeServiceNamesMapping
-        )
+        testedContext =
+            DDSpanContext(
+                fakeTraceId,
+                fakeSpanId,
+                fakeParentId,
+                fakeServiceName,
+                fakeOperationName,
+                fakeResourceName,
+                fakeSamplingPriority,
+                fakeOrigin,
+                fakeBaggageItems,
+                fakeErrorFlag,
+                fakeSpanType,
+                fakeTags,
+                mockedPendingTrace,
+                mockedTracer,
+                fakeServiceNamesMapping
+            )
 
         assertThat(testedContext).hasSamplingPriority(fakeSamplingPriority)
     }
@@ -338,23 +345,24 @@ internal class DDSpanContextTest {
         fakeServiceNamesMapping = forge.aMap(size = forge.anInt(min = 1, max = 10)) {
             forge.anAlphabeticalString() to forge.anAlphaNumericalString()
         }
-        testedContext = DDSpanContext(
-            fakeTraceId,
-            fakeSpanId,
-            fakeParentId,
-            fakeServiceName,
-            fakeOperationName,
-            fakeResourceName,
-            fakeSamplingPriority,
-            fakeOrigin,
-            fakeBaggageItems,
-            fakeErrorFlag,
-            fakeSpanType,
-            fakeTags,
-            mockedPendingTrace,
-            mockedTracer,
-            fakeServiceNamesMapping
-        )
+        testedContext =
+            DDSpanContext(
+                fakeTraceId,
+                fakeSpanId,
+                fakeParentId,
+                fakeServiceName,
+                fakeOperationName,
+                fakeResourceName,
+                fakeSamplingPriority,
+                fakeOrigin,
+                fakeBaggageItems,
+                fakeErrorFlag,
+                fakeSpanType,
+                fakeTags,
+                mockedPendingTrace,
+                mockedTracer,
+                fakeServiceNamesMapping
+            )
 
         // WHEN
         val mappedServiceName = fakeServiceNamesMapping.keys.toTypedArray()[0]
@@ -386,23 +394,24 @@ internal class DDSpanContextTest {
     fun `M return root Context origin W getOrigin {rootContext != null}`(forge: Forge) {
         // GIVEN
         val fakeRootOrigin = forge.anAlphabeticalString()
-        val fakeRootSpanContext = DDSpanContext(
-            fakeTraceId,
-            fakeSpanId,
-            fakeParentId,
-            fakeServiceName,
-            fakeOperationName,
-            fakeResourceName,
-            fakeSamplingPriority,
-            fakeRootOrigin,
-            fakeBaggageItems,
-            fakeErrorFlag,
-            fakeSpanType,
-            fakeTags,
-            mockedPendingTrace,
-            mockedTracer,
-            fakeServiceNamesMapping
-        )
+        val fakeRootSpanContext =
+            DDSpanContext(
+                fakeTraceId,
+                fakeSpanId,
+                fakeParentId,
+                fakeServiceName,
+                fakeOperationName,
+                fakeResourceName,
+                fakeSamplingPriority,
+                fakeRootOrigin,
+                fakeBaggageItems,
+                fakeErrorFlag,
+                fakeSpanType,
+                fakeTags,
+                mockedPendingTrace,
+                mockedTracer,
+                fakeServiceNamesMapping
+            )
         whenever(mockRootSpan.context()).thenReturn(fakeRootSpanContext)
         whenever(mockedPendingTrace.rootSpan).thenReturn(mockRootSpan)
 
@@ -413,23 +422,24 @@ internal class DDSpanContextTest {
     @Test
     fun `M return Empty W getMetrics and no metric was added`() {
         // GIVEN
-        testedContext = DDSpanContext(
-            fakeTraceId,
-            fakeSpanId,
-            fakeParentId,
-            fakeServiceName,
-            fakeOperationName,
-            fakeResourceName,
-            PrioritySampling.UNSET,
-            fakeOrigin,
-            fakeBaggageItems,
-            fakeErrorFlag,
-            fakeSpanType,
-            fakeTags,
-            mockedPendingTrace,
-            mockedTracer,
-            fakeServiceNamesMapping
-        )
+        testedContext =
+            DDSpanContext(
+                fakeTraceId,
+                fakeSpanId,
+                fakeParentId,
+                fakeServiceName,
+                fakeOperationName,
+                fakeResourceName,
+                PrioritySampling.UNSET,
+                fakeOrigin,
+                fakeBaggageItems,
+                fakeErrorFlag,
+                fakeSpanType,
+                fakeTags,
+                mockedPendingTrace,
+                mockedTracer,
+                fakeServiceNamesMapping
+            )
 
         assertThat(testedContext.metrics).isEmpty()
     }

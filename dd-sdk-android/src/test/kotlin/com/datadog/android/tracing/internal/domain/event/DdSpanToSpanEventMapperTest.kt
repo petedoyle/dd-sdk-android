@@ -15,7 +15,7 @@ import com.datadog.android.core.model.UserInfo
 import com.datadog.android.log.internal.user.UserInfoProvider
 import com.datadog.android.tracing.assertj.SpanEventAssert.Companion.assertThat
 import com.datadog.android.utils.forge.Configurator
-import com.datadog.opentracing.DDSpan
+import co.fast.android.internal.datadog.opentracing.DDSpan
 import com.datadog.tools.unit.setFieldValue
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.whenever

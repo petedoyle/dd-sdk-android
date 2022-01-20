@@ -14,7 +14,7 @@ import com.datadog.android.core.internal.utils.toHexString
 import com.datadog.android.core.model.NetworkInfo
 import com.datadog.android.log.internal.user.UserInfoProvider
 import com.datadog.android.tracing.model.SpanEvent
-import com.datadog.opentracing.DDSpan
+import co.fast.android.internal.datadog.opentracing.DDSpan
 
 internal class DdSpanToSpanEventMapper(
     private val timeProvider: TimeProvider,

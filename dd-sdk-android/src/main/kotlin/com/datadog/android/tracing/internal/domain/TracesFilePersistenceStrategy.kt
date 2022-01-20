@@ -20,7 +20,7 @@ import com.datadog.android.tracing.internal.domain.event.DdSpanToSpanEventMapper
 import com.datadog.android.tracing.internal.domain.event.SpanEventMapperWrapper
 import com.datadog.android.tracing.internal.domain.event.SpanEventSerializer
 import com.datadog.android.tracing.internal.domain.event.SpanMapperSerializer
-import com.datadog.opentracing.DDSpan
+import co.fast.android.internal.datadog.opentracing.DDSpan
 import java.util.concurrent.ExecutorService
 
 internal class TracesFilePersistenceStrategy(
