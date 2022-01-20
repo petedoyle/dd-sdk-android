@@ -4,4 +4,4 @@
 # Copyright 2016-Present Datadog, Inc.
 #
 
-com.datadog.tools.noopfactory.NoOpFactoryAnnotationProcessor
+co.fast.android.internal.datadog.tools.noopfactory.NoOpFactoryAnnotationProcessor

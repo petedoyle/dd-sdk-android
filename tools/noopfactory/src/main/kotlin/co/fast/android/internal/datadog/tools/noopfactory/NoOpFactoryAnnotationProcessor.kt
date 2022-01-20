@@ -4,9 +4,9 @@
  * Copyright 2016-Present Datadog, Inc.
  */
 
-package com.datadog.tools.noopfactory
+package co.fast.android.internal.datadog.tools.noopfactory
 
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 import com.squareup.kotlinpoet.AnnotationSpec
 import com.squareup.kotlinpoet.BOOLEAN
 import com.squareup.kotlinpoet.ClassName
@@ -40,7 +40,7 @@ import javax.lang.model.element.VariableElement
 
 @SupportedOptions("org.gradle.annotation.processing.aggregating")
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
-@SupportedAnnotationTypes("com.datadog.tools.annotation.NoOpImplementation")
+@SupportedAnnotationTypes("co.fast.android.internal.NoOpImplementation")
 class NoOpFactoryAnnotationProcessor : AbstractProcessor() {
 
     // region Processor

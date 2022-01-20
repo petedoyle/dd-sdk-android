@@ -4,7 +4,7 @@
  * Copyright 2016-Present Datadog, Inc.
  */
 
-package com.datadog.tools.annotation
+package co.fast.android.internal.datadog.tools.annotation
 
 /**
  * Adding this annotation on an interface will generate a No-Op implementation class.

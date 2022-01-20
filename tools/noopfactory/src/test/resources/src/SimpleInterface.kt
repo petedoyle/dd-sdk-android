@@ -1,6 +1,6 @@
 package com.example
 
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 import java.util.Date
 
 @NoOpImplementation
