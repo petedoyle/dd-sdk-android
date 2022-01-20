@@ -8,7 +8,7 @@ package com.datadog.android.tracing.internal
 
 import android.content.Context
 import android.util.Log
-import com.datadog.android.Datadog
+import co.fast.android.internal.datadog.android.Datadog
 import com.datadog.android.core.configuration.Configuration
 import com.datadog.android.log.LogAttributes
 import com.datadog.android.rum.GlobalRum
@@ -99,7 +99,7 @@ internal class AndroidTracerTest {
 
     @AfterEach
     fun `tear down`() {
-        Datadog.invokeMethod("stop")
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
 
         val tracer = GlobalTracer.get()
         val activeSpan = tracer?.activeSpan()

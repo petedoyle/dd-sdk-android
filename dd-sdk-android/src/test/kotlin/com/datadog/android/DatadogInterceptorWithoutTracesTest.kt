@@ -143,7 +143,7 @@ internal class DatadogInterceptorWithoutTracesTest {
     @BeforeEach
     fun `set up`(forge: Forge) {
         mockDevLogHandler = mockDevLogHandler()
-        Datadog.setVerbosity(Log.VERBOSE)
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setVerbosity(Log.VERBOSE)
 
         whenever(mockLocalTracer.buildSpan(TracingInterceptor.SPAN_NAME)) doReturn mockSpanBuilder
         whenever(mockSpanBuilder.withOrigin(DatadogInterceptor.ORIGIN_RUM)) doReturn mockSpanBuilder

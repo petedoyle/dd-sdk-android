@@ -11,7 +11,7 @@ import android.util.Log
 import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequest
 import androidx.work.impl.WorkManagerImpl
-import com.datadog.android.Datadog
+import co.fast.android.internal.datadog.android.Datadog
 import com.datadog.android.core.configuration.Configuration
 import com.datadog.android.core.configuration.Credentials
 import com.datadog.android.core.internal.CoreFeature
@@ -137,7 +137,7 @@ internal class DatadogExceptionHandlerTest {
         whenever(mockNetworkInfoProvider.getLatestNetworkInfo()) doReturn fakeNetworkInfo
         whenever(mockUserInfoProvider.getUserInfo()) doReturn fakeUserInfo
 
-        Datadog.initialize(
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(
             appContext.mockInstance,
             Credentials(fakeToken, fakeEnvName, Credentials.NO_VARIANT, null),
             Configuration.Builder(
@@ -172,7 +172,7 @@ internal class DatadogExceptionHandlerTest {
     fun `tear down`() {
         Thread.setDefaultUncaughtExceptionHandler(originalHandler)
         WorkManagerImpl::class.java.setStaticValue("sDefaultInstance", null)
-        Datadog.invokeMethod("stop")
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
         GlobalTracer::class.java.setStaticValue("isRegistered", false)
     }
 
@@ -459,7 +459,7 @@ internal class DatadogExceptionHandlerTest {
                     )
                 )
         }
-        Datadog.invokeMethod("stop")
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
     }
 
     @Test

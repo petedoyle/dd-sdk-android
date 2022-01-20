@@ -7,7 +7,7 @@
 package com.datadog.android.core.internal.utils
 
 import android.util.Log
-import com.datadog.android.Datadog
+import co.fast.android.internal.datadog.android.Datadog
 import com.datadog.android.log.internal.logger.CombinedLogHandler
 import com.datadog.android.log.internal.logger.ConditionalLogHandler
 import com.datadog.android.log.internal.logger.DatadogLogHandler
@@ -49,7 +49,7 @@ class RuntimeUtilsTest {
 
     @AfterEach
     fun `tear down`() {
-        Datadog.setFieldValue("isDebug", false)
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setFieldValue("isDebug", false)
         InternalLogsFeature.stop()
 
         devLogger.setFieldValue("handler", buildDevLogHandler())
@@ -135,7 +135,7 @@ class RuntimeUtilsTest {
         @IntForgery(min = Log.VERBOSE, max = (Log.ASSERT + 1)) level: Int
     ) {
         // Given
-        Datadog.setVerbosity(level)
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setVerbosity(level)
 
         // When
         val handler = buildDevLogHandler()

@@ -8,7 +8,7 @@ package com.datadog.android.log
 
 import android.content.Context
 import android.util.Log as AndroidLog
-import com.datadog.android.Datadog
+import co.fast.android.internal.datadog.android.Datadog
 import com.datadog.android.core.configuration.Configuration
 import com.datadog.android.core.internal.CoreFeature
 import com.datadog.android.core.internal.persistence.DataWriter
@@ -89,7 +89,7 @@ internal class LoggerBuilderTest {
 
         assertThat(handler).isInstanceOf(NoOpLogHandler::class.java)
         verify(mockDevLogHandler)
-            .handleLog(AndroidLog.ERROR, Datadog.MESSAGE_NOT_INITIALIZED)
+            .handleLog(AndroidLog.ERROR, _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.MESSAGE_NOT_INITIALIZED)
     }
 
     @Test

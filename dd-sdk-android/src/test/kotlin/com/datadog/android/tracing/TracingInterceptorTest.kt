@@ -8,7 +8,7 @@ package com.datadog.android.tracing
 
 import android.content.Context
 import android.util.Log
-import com.datadog.android.Datadog
+import co.fast.android.internal.datadog.android.Datadog
 import com.datadog.android.core.configuration.Configuration
 import com.datadog.android.core.internal.net.FirstPartyHostDetector
 import com.datadog.android.core.internal.utils.loggableStackTrace
@@ -148,7 +148,7 @@ internal open class TracingInterceptorTest {
     @BeforeEach
     fun `set up`(forge: Forge) {
         mockDevLogHandler = mockDevLogHandler()
-        Datadog.setVerbosity(Log.VERBOSE)
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setVerbosity(Log.VERBOSE)
 
         whenever(mockTracer.buildSpan(TracingInterceptor.SPAN_NAME)) doReturn mockSpanBuilder
         whenever(mockLocalTracer.buildSpan(TracingInterceptor.SPAN_NAME)) doReturn mockSpanBuilder

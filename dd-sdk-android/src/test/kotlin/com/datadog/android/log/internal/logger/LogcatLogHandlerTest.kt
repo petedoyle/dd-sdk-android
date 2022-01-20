@@ -7,7 +7,7 @@
 package com.datadog.android.log.internal.logger
 
 import com.datadog.android.BuildConfig
-import com.datadog.android.Datadog
+import co.fast.android.internal.datadog.android.Datadog
 import fr.xgouchet.elmyr.Case
 import fr.xgouchet.elmyr.Forge
 import fr.xgouchet.elmyr.annotation.StringForgery
@@ -36,12 +36,12 @@ internal class LogcatLogHandlerTest {
 
     @AfterEach
     fun `tear down`() {
-        Datadog.isDebug = BuildConfig.DEBUG
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isDebug = BuildConfig.DEBUG
     }
 
     @Test
     fun `resolves stack trace element null if in release mode`() {
-        Datadog.isDebug = false
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isDebug = false
 
         val element = testedHandler.getCallerStackElement()
 
@@ -52,7 +52,7 @@ internal class LogcatLogHandlerTest {
     @Test
     fun `resolves stack trace element null if useClassnameAsTag=false`() {
         testedHandler = LogcatLogHandler(fakeServiceName, false)
-        Datadog.isDebug = true
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isDebug = true
 
         val element = testedHandler.getCallerStackElement()
 
@@ -62,7 +62,7 @@ internal class LogcatLogHandlerTest {
 
     @Test
     fun `resolves stack trace element from caller`() {
-        Datadog.isDebug = true
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isDebug = true
 
         val element = testedHandler.getCallerStackElement()
 
@@ -80,7 +80,7 @@ internal class LogcatLogHandlerTest {
     )
     @Test
     fun `resolves nested stack trace element from caller`() {
-        Datadog.isDebug = true
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isDebug = true
 
         var element: StackTraceElement? = null
 

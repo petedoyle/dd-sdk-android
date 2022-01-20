@@ -7,7 +7,7 @@
 package com.datadog.android.core.internal.net
 
 import android.util.Log
-import com.datadog.android.Datadog
+import co.fast.android.internal.datadog.android.Datadog
 import com.datadog.android.log.Logger
 import com.datadog.android.log.internal.logger.LogHandler
 import com.datadog.android.utils.forge.Configurator
@@ -52,7 +52,7 @@ internal class UploadStatusTest {
     fun `set up`(forge: Forge) {
         mockLogger = Logger(mockLogHandler)
         fakeContext = forge.anAlphabeticalString()
-        Datadog.setVerbosity(Log.VERBOSE)
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setVerbosity(Log.VERBOSE)
     }
 
     @Test

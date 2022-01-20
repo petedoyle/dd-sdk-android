@@ -10,7 +10,7 @@ import android.content.Context
 import androidx.work.ListenableWorker
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import com.datadog.android.Datadog
+import co.fast.android.internal.datadog.android.Datadog
 import com.datadog.android.core.configuration.Configuration
 import com.datadog.android.core.configuration.Credentials
 import com.datadog.android.core.internal.net.DataUploader
@@ -113,7 +113,7 @@ internal class UploadWorkerTest {
         // Prevent crash when initializing RumFeature
         mockChoreographerInstance()
 
-        Datadog.initialize(
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(
             appContext.mockInstance,
             Credentials("CLIENT_TOKEN", "ENVIRONMENT", Credentials.NO_VARIANT, null),
             Configuration.Builder(
@@ -142,7 +142,7 @@ internal class UploadWorkerTest {
 
     @AfterEach
     fun `tear down`() {
-        Datadog.invokeMethod("stop")
+        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
     }
 
     @Test
