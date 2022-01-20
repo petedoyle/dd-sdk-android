@@ -1,0 +1,35 @@
+/*
+ * Unless explicitly stated otherwise all files in this repository are licensed under the Apache License Version 2.0.
+ * This product includes software developed at Datadog (https://www.datadoghq.com/).
+ * Copyright 2016-Present Datadog, Inc.
+ */
+
+package co.fast.android.internal.datadog.android.utils.forge
+
+import co.fast.android.internal.datadog.android.core.configuration.Configuration
+import com.nhaarman.mockitokotlin2.mock
+import fr.xgouchet.elmyr.Forge
+import fr.xgouchet.elmyr.ForgeryFactory
+import java.net.Proxy
+import java.net.URL
+import okhttp3.Authenticator
+
+internal class ConfigurationCoreForgeryFactory :
+    ForgeryFactory<Configuration.Core> {
+    override fun getForgery(forge: Forge): Configuration.Core {
+        val (proxy, auth) = if (forge.aBool()) {
+            mock<Proxy>() to mock()
+        } else {
+            null to Authenticator.NONE
+        }
+
+        return Configuration.Core(
+            needsClearTextHttp = forge.aBool(),
+            firstPartyHosts = forge.aList { getForgery<URL>().host },
+            batchSize = forge.getForgery(),
+            uploadFrequency = forge.getForgery(),
+            proxy = proxy,
+            proxyAuth = auth
+        )
+    }
+}
