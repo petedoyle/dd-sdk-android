@@ -4,10 +4,10 @@
  * Copyright 2016-Present Datadog, Inc.
  */
 
-package com.datadog.android.log.internal.logger;
+package co.fast.android.internal.datadog.android.log.internal.logger;
 
-import com.datadog.android.BuildConfig;
-import com.datadog.android.Datadog;
+import co.fast.android.internal.datadog.android.BuildConfig;
+import co.fast.android.internal.datadog.android.Datadog;
 import fr.xgouchet.elmyr.annotation.StringForgery;
 import fr.xgouchet.elmyr.annotation.StringForgeryType;
 import fr.xgouchet.elmyr.junit5.ForgeExtension;
