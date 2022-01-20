@@ -8,8 +8,8 @@ package com.datadog.android.ktx.sqlite
 
 import android.content.ContentValues
 import android.database.sqlite.SQLiteDatabase
-import com.datadog.tools.unit.forge.BaseConfigurator
-import com.datadog.tools.unit.setStaticValue
+import co.fast.android.internal.datadog.tools.unit.forge.BaseConfigurator
+import co.fast.android.internal.datadog.tools.unit.setStaticValue
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.inOrder
 import com.nhaarman.mockitokotlin2.verify

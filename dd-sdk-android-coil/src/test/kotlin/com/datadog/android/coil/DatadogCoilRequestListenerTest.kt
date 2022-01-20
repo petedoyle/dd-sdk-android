@@ -13,8 +13,7 @@ import coil.request.ImageRequest
 import com.datadog.android.rum.GlobalRum
 import com.datadog.android.rum.RumErrorSource
 import com.datadog.android.rum.RumMonitor
-import com.datadog.tools.unit.forge.BaseConfigurator
-import com.datadog.tools.unit.getStaticValue
+import co.fast.android.internal.datadog.tools.unit.forge.BaseConfigurator
 import com.nhaarman.mockitokotlin2.argumentCaptor
 import com.nhaarman.mockitokotlin2.eq
 import com.nhaarman.mockitokotlin2.mock

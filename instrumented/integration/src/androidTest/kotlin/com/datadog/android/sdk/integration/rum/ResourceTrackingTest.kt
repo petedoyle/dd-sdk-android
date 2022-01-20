@@ -17,7 +17,7 @@ import com.datadog.android.sdk.rules.MockServerActivityTestRule
 import com.datadog.android.sdk.rules.RumMockServerActivityTestRule
 import com.datadog.android.sdk.utils.exhaustiveAttributes
 import com.datadog.android.sdk.utils.isRumUrl
-import com.datadog.tools.unit.ConditionWatcher
+import co.fast.android.internal.datadog.tools.unit.ConditionWatcher
 import com.google.gson.JsonObject
 import fr.xgouchet.elmyr.junit4.ForgeRule
 import java.io.IOException

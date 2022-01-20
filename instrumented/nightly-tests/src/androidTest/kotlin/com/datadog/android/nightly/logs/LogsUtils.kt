@@ -7,8 +7,7 @@
 package com.datadog.android.nightly.logs
 
 import com.datadog.android.log.Logger
-import com.datadog.android.nightly.utils.defaultTestAttributes
-import com.datadog.tools.unit.forge.aThrowable
+import co.fast.android.internal.datadog.tools.unit.forge.aThrowable
 import fr.xgouchet.elmyr.Forge
 
 fun initializeLogger() = Logger.Builder()

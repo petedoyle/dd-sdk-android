@@ -18,8 +18,6 @@ import com.datadog.android.privacy.TrackingConsent
 import com.datadog.android.rum.GlobalRum
 import com.datadog.android.sdk.integration.RuntimeConfig
 import com.datadog.android.sdk.utils.addTrackingConsent
-import com.datadog.tools.unit.getFieldValue
-import com.datadog.tools.unit.invokeMethod
 import com.google.gson.JsonParser
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream

@@ -21,10 +21,8 @@ import com.datadog.android.rum.RumErrorSource
 import com.datadog.android.rum.RumMonitor
 import com.datadog.android.rum.RumResourceKind
 import com.datadog.android.tracing.AndroidTracer
-import com.datadog.tools.unit.forge.aThrowable
-import com.datadog.tools.unit.getStaticValue
-import com.datadog.tools.unit.invokeMethod
-import com.datadog.tools.unit.setStaticValue
+import co.fast.android.internal.datadog.tools.unit.forge.aThrowable
+import co.fast.android.internal.datadog.tools.unit.setStaticValue
 import fr.xgouchet.elmyr.Forge
 import io.opentracing.Tracer
 import io.opentracing.util.GlobalTracer

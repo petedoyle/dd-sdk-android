@@ -9,9 +9,8 @@ package com.datadog.android.fresco
 import com.datadog.android.rum.GlobalRum
 import com.datadog.android.rum.RumErrorSource
 import com.datadog.android.rum.RumMonitor
-import com.datadog.tools.unit.forge.BaseConfigurator
-import com.datadog.tools.unit.forge.aThrowable
-import com.datadog.tools.unit.getStaticValue
+import co.fast.android.internal.datadog.tools.unit.forge.BaseConfigurator
+import co.fast.android.internal.datadog.tools.unit.forge.aThrowable
 import com.facebook.cache.common.CacheEvent
 import com.facebook.imagepipeline.cache.BitmapMemoryCacheKey
 import com.nhaarman.mockitokotlin2.argumentCaptor

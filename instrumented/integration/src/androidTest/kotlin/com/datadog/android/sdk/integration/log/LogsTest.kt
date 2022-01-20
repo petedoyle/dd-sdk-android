@@ -14,7 +14,7 @@ import com.datadog.android.sdk.integration.BuildConfig
 import com.datadog.android.sdk.integration.RuntimeConfig
 import com.datadog.android.sdk.rules.HandledRequest
 import com.datadog.android.sdk.utils.isLogsUrl
-import com.datadog.tools.unit.assertj.JsonObjectAssert
+import co.fast.android.internal.datadog.tools.unit.assertj.JsonObjectAssert
 import com.google.gson.JsonObject
 import java.util.Date
 import java.util.concurrent.TimeUnit

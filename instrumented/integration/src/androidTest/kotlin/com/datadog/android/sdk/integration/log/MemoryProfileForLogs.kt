@@ -12,7 +12,7 @@ import com.datadog.android.sdk.ActivityProfiling
 import com.datadog.android.sdk.rules.AbstractProfilingRule
 import com.datadog.android.sdk.rules.MemoryProfilingRule
 import com.datadog.android.sdk.rules.MockServerActivityTestRule
-import com.datadog.tools.unit.forge.ThrowableForgeryFactory
+import co.fast.android.internal.datadog.tools.unit.forge.ThrowableForgeryFactory
 import fr.xgouchet.elmyr.junit4.ForgeRule
 import java.util.concurrent.TimeUnit
 import org.junit.Ignore

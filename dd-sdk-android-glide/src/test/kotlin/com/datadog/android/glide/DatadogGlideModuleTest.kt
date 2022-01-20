@@ -16,8 +16,8 @@ import com.bumptech.glide.load.model.GlideUrl
 import com.bumptech.glide.load.model.ModelLoaderFactory
 import com.bumptech.glide.module.AppGlideModule
 import com.datadog.android.DatadogInterceptor
-import com.datadog.tools.unit.assertj.containsInstanceOf
-import com.datadog.tools.unit.getFieldValue
+import co.fast.android.internal.datadog.tools.unit.assertj.containsInstanceOf
+import co.fast.android.internal.datadog.tools.unit.getFieldValue
 import com.nhaarman.mockitokotlin2.argumentCaptor
 import com.nhaarman.mockitokotlin2.eq
 import com.nhaarman.mockitokotlin2.verify

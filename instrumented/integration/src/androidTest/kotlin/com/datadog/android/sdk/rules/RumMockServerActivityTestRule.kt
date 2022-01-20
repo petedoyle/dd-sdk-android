@@ -13,7 +13,7 @@ import androidx.test.platform.app.InstrumentationRegistry
 import com.datadog.android.privacy.TrackingConsent
 import com.datadog.android.rum.tracking.ActivityViewTrackingStrategy
 import com.datadog.android.sdk.utils.addExtras
-import com.datadog.tools.unit.getFieldValue
+import co.fast.android.internal.datadog.tools.unit.getFieldValue
 import kotlin.collections.ArrayList
 
 internal open class RumMockServerActivityTestRule<T : Activity>(

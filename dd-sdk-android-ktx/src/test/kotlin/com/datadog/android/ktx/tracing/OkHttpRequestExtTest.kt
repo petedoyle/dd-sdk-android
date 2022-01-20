@@ -6,7 +6,7 @@
 
 package com.datadog.android.ktx.tracing
 
-import com.datadog.tools.unit.forge.BaseConfigurator
+import co.fast.android.internal.datadog.tools.unit.forge.BaseConfigurator
 import com.nhaarman.mockitokotlin2.mock
 import fr.xgouchet.elmyr.annotation.StringForgery
 import fr.xgouchet.elmyr.junit5.ForgeConfiguration

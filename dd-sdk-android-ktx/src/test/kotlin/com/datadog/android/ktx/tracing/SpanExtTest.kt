@@ -1,7 +1,7 @@
 package com.datadog.android.ktx.tracing
 
-import com.datadog.tools.unit.forge.BaseConfigurator
-import com.datadog.tools.unit.setStaticValue
+import co.fast.android.internal.datadog.tools.unit.forge.BaseConfigurator
+import co.fast.android.internal.datadog.tools.unit.setStaticValue
 import com.nhaarman.mockitokotlin2.argumentCaptor
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.inOrder

@@ -9,8 +9,7 @@ package com.datadog.android.rx
 import com.datadog.android.rum.GlobalRum
 import com.datadog.android.rum.RumErrorSource
 import com.datadog.android.rum.RumMonitor
-import com.datadog.tools.unit.forge.BaseConfigurator
-import com.datadog.tools.unit.getStaticValue
+import co.fast.android.internal.datadog.tools.unit.forge.BaseConfigurator
 import com.nhaarman.mockitokotlin2.verify
 import fr.xgouchet.elmyr.annotation.Forgery
 import fr.xgouchet.elmyr.junit5.ForgeConfiguration

@@ -6,7 +6,7 @@
 
 package com.datadog.android.sdk.integration.rum
 
-import com.datadog.tools.unit.assertj.JsonObjectAssert.Companion.assertThat
+import co.fast.android.internal.datadog.tools.unit.assertj.JsonObjectAssert.Companion.assertThat
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser
 import org.assertj.core.api.Assertions

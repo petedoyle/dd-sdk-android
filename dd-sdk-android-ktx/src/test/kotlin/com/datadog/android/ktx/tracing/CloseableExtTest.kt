@@ -11,8 +11,7 @@ import com.datadog.android.ktx.rum.useMonitored
 import com.datadog.android.rum.GlobalRum
 import com.datadog.android.rum.RumErrorSource
 import com.datadog.android.rum.RumMonitor
-import com.datadog.tools.unit.forge.BaseConfigurator
-import com.datadog.tools.unit.getStaticValue
+import co.fast.android.internal.datadog.tools.unit.forge.BaseConfigurator
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.verifyNoMoreInteractions
 import fr.xgouchet.elmyr.annotation.Forgery

@@ -11,7 +11,7 @@ import androidx.test.filters.LargeTest
 import androidx.test.platform.app.InstrumentationRegistry
 import com.datadog.android.privacy.TrackingConsent
 import com.datadog.android.sdk.rules.GesturesTrackingActivityTestRule
-import com.datadog.tools.unit.ConditionWatcher
+import co.fast.android.internal.datadog.tools.unit.ConditionWatcher
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

@@ -27,7 +27,7 @@ import com.datadog.android.nightly.utils.aTagValue
 import com.datadog.android.nightly.utils.defaultTestAttributes
 import com.datadog.android.nightly.utils.initializeSdk
 import com.datadog.android.nightly.utils.measure
-import com.datadog.tools.unit.forge.aThrowable
+import co.fast.android.internal.datadog.tools.unit.forge.aThrowable
 import com.google.gson.JsonArray
 import com.google.gson.JsonObject
 import fr.xgouchet.elmyr.junit4.ForgeRule

@@ -22,7 +22,7 @@ import com.datadog.android.rum.RumActionType
 import com.datadog.android.rum.RumErrorSource
 import com.datadog.android.rum.RumMonitor
 import com.datadog.android.rum.RumResourceKind
-import com.datadog.tools.unit.forge.aThrowable
+import co.fast.android.internal.datadog.tools.unit.forge.aThrowable
 import fr.xgouchet.elmyr.Forge
 
 fun measureRumMonitorInitialize(codeBlock: () -> RumMonitor): RumMonitor {

@@ -8,7 +8,7 @@ import android.content.Context
 import com.datadog.android.ndk.NdkCrashReportsPlugin
 import com.datadog.android.plugin.DatadogPluginConfig
 import com.datadog.android.privacy.TrackingConsent
-import com.datadog.tools.unit.setFieldValue
+import co.fast.android.internal.datadog.tools.unit.setFieldValue
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
 import fr.xgouchet.elmyr.Forge

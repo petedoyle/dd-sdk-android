@@ -7,8 +7,7 @@
 package com.datadog.android.sdk.integration.rum
 
 import com.datadog.android.rum.GlobalRum
-import com.datadog.tools.unit.getFieldValue
-import com.datadog.tools.unit.getStaticValue
+import co.fast.android.internal.datadog.tools.unit.getFieldValue
 import com.google.gson.JsonElement
 import java.util.concurrent.atomic.AtomicReference
 
