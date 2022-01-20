@@ -4,10 +4,10 @@
 
 API_SURFACE_PATH = "dd-sdk-android/apiSurface"
 NIGHTLY_TESTS_DIRECTORY_PATH = "instrumented/nightly-tests/src/androidTest/kotlin"
-NIGHTLY_TESTS_PACKAGE = "com/datadog/android/nightly"
+NIGHTLY_TESTS_PACKAGE = "co/fast/android/internal/datadog/android/nightly"
 IGNORED_TYPES = [
-    "com.datadog.android.tracing.model.SpanEvent$Span",
-    "com.datadog.android.rum.model.ActionEvent$Dd",
-    "com.datadog.android.rum.model.ErrorEvent$Dd",
-    "com.datadog.android.rum.model.LongTaskEvent$Dd"
+    "co.fast.android.internal.datadog.android.tracing.model.SpanEvent$Span",
+    "co.fast.android.internal.datadog.android.rum.model.ActionEvent$Dd",
+    "co.fast.android.internal.datadog.android.rum.model.ErrorEvent$Dd",
+    "co.fast.android.internal.datadog.android.rum.model.LongTaskEvent$Dd"
 ]
