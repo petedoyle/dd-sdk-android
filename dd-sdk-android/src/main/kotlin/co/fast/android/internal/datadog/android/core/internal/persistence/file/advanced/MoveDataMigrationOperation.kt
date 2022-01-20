@@ -6,9 +6,9 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced
 
-import com.datadog.android.core.internal.persistence.file.FileHandler
-import com.datadog.android.core.internal.utils.retryWithDelay
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileHandler
+import co.fast.android.internal.datadog.android.core.internal.utils.retryWithDelay
+import co.fast.android.internal.datadog.android.log.Logger
 import java.io.File
 import java.util.concurrent.TimeUnit
 

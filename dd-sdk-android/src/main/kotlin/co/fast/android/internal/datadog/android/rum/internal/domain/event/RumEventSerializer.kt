@@ -6,15 +6,15 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.domain.event
 
-import com.datadog.android.core.internal.constraints.DataConstraints
-import com.datadog.android.core.internal.constraints.DatadogDataConstraints
-import com.datadog.android.core.internal.persistence.Serializer
-import com.datadog.android.rum.RumAttributes
-import com.datadog.android.rum.model.ActionEvent
-import com.datadog.android.rum.model.ErrorEvent
-import com.datadog.android.rum.model.LongTaskEvent
-import com.datadog.android.rum.model.ResourceEvent
-import com.datadog.android.rum.model.ViewEvent
+import co.fast.android.internal.datadog.android.core.internal.constraints.DataConstraints
+import co.fast.android.internal.datadog.android.core.internal.constraints.DatadogDataConstraints
+import co.fast.android.internal.datadog.android.core.internal.persistence.Serializer
+import co.fast.android.internal.datadog.android.rum.RumAttributes
+import co.fast.android.internal.datadog.android.rum.model.ActionEvent
+import co.fast.android.internal.datadog.android.rum.model.ErrorEvent
+import co.fast.android.internal.datadog.android.rum.model.LongTaskEvent
+import co.fast.android.internal.datadog.android.rum.model.ResourceEvent
+import co.fast.android.internal.datadog.android.rum.model.ViewEvent
 import com.google.gson.JsonObject
 
 internal class RumEventSerializer(

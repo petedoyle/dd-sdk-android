@@ -14,7 +14,7 @@ import co.fast.android.internal.datadog.android.core.internal.persistence.file.a
 import co.fast.android.internal.datadog.android.log.Logger
 import co.fast.android.internal.datadog.android.log.internal.logger.LogHandler
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.extensions.ApiLevelExtension
+import co.fast.android.internal.datadog.tools.unit.extensions.ApiLevelExtension
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.doAnswer
 import com.nhaarman.mockitokotlin2.whenever

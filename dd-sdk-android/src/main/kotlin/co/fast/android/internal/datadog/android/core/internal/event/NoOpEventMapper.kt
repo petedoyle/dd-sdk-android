@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.core.internal.event
 
-import com.datadog.android.event.EventMapper
+import co.fast.android.internal.datadog.android.event.EventMapper
 
 internal class NoOpEventMapper<T : Any> : EventMapper<T> {
 

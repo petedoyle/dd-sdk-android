@@ -6,18 +6,18 @@
 
 package co.fast.android.internal.datadog.android.rum
 
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.error.internal.CrashReportsFeature
-import com.datadog.android.log.internal.LogsFeature
-import com.datadog.android.plugin.DatadogContext
-import com.datadog.android.plugin.DatadogPlugin
-import com.datadog.android.plugin.DatadogRumContext
-import com.datadog.android.rum.GlobalRum.get
-import com.datadog.android.rum.GlobalRum.registerIfAbsent
-import com.datadog.android.rum.internal.RumFeature
-import com.datadog.android.rum.internal.domain.RumContext
-import com.datadog.android.rum.internal.monitor.AdvancedRumMonitor
-import com.datadog.android.tracing.internal.TracesFeature
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.error.internal.CrashReportsFeature
+import co.fast.android.internal.datadog.android.log.internal.LogsFeature
+import co.fast.android.internal.datadog.android.plugin.DatadogContext
+import co.fast.android.internal.datadog.android.plugin.DatadogPlugin
+import co.fast.android.internal.datadog.android.plugin.DatadogRumContext
+import co.fast.android.internal.datadog.android.rum.GlobalRum.get
+import co.fast.android.internal.datadog.android.rum.GlobalRum.registerIfAbsent
+import co.fast.android.internal.datadog.android.rum.internal.RumFeature
+import co.fast.android.internal.datadog.android.rum.internal.domain.RumContext
+import co.fast.android.internal.datadog.android.rum.internal.monitor.AdvancedRumMonitor
+import co.fast.android.internal.datadog.android.tracing.internal.TracesFeature
 import java.util.concurrent.Callable
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.atomic.AtomicBoolean

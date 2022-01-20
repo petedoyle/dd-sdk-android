@@ -6,11 +6,11 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced
 
-import com.datadog.android.core.internal.persistence.file.FileOrchestrator
-import com.datadog.android.core.internal.persistence.file.NoOpFileOrchestrator
-import com.datadog.android.core.internal.privacy.ConsentProvider
-import com.datadog.android.privacy.TrackingConsent
-import com.datadog.android.privacy.TrackingConsentProviderCallback
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.NoOpFileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.privacy.ConsentProvider
+import co.fast.android.internal.datadog.android.privacy.TrackingConsent
+import co.fast.android.internal.datadog.android.privacy.TrackingConsentProviderCallback
 import java.io.File
 
 internal open class ConsentAwareFileOrchestrator(

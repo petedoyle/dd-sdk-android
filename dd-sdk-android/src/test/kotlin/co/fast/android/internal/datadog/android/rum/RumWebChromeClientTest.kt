@@ -14,9 +14,9 @@ import co.fast.android.internal.datadog.android.log.internal.logger.LogHandler
 import co.fast.android.internal.datadog.android.rum.webview.RumWebChromeClient
 import co.fast.android.internal.datadog.android.utils.config.GlobalRumMonitorTestConfiguration
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.annotations.TestConfigurationsProvider
-import com.datadog.tools.unit.extensions.TestConfigurationExtension
-import com.datadog.tools.unit.extensions.config.TestConfiguration
+import co.fast.android.internal.datadog.tools.unit.annotations.TestConfigurationsProvider
+import co.fast.android.internal.datadog.tools.unit.extensions.TestConfigurationExtension
+import co.fast.android.internal.datadog.tools.unit.extensions.config.TestConfiguration
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.verifyZeroInteractions

@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.domain.scope
 
-import com.datadog.android.rum.internal.domain.event.ResourceTiming
+import co.fast.android.internal.datadog.android.rum.internal.domain.event.ResourceTiming
 
 private const val FIRST_BYTE_TIMING = "firstByte"
 private const val DOWNLOAD_TIMING = "download"

@@ -6,12 +6,12 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.monitor
 
-import com.datadog.android.rum.RumErrorSource
-import com.datadog.android.rum.RumMonitor
-import com.datadog.android.rum.internal.domain.Time
-import com.datadog.android.rum.internal.domain.event.ResourceTiming
-import com.datadog.android.rum.model.ViewEvent
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.android.rum.RumErrorSource
+import co.fast.android.internal.datadog.android.rum.RumMonitor
+import co.fast.android.internal.datadog.android.rum.internal.domain.Time
+import co.fast.android.internal.datadog.android.rum.internal.domain.event.ResourceTiming
+import co.fast.android.internal.datadog.android.rum.model.ViewEvent
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 @NoOpImplementation
 internal interface AdvancedRumMonitor : RumMonitor {

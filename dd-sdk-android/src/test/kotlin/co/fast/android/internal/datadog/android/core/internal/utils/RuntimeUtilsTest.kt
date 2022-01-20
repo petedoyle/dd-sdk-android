@@ -19,8 +19,8 @@ import co.fast.android.internal.datadog.android.monitoring.internal.InternalLogs
 import co.fast.android.internal.datadog.android.utils.extension.EnableLogcat
 import co.fast.android.internal.datadog.android.utils.extension.EnableLogcatExtension
 import co.fast.android.internal.datadog.android.utils.mockDevLogHandler
-import com.datadog.tools.unit.extensions.ApiLevelExtension
-import com.datadog.tools.unit.setFieldValue
+import co.fast.android.internal.datadog.tools.unit.extensions.ApiLevelExtension
+import co.fast.android.internal.datadog.tools.unit.setFieldValue
 import com.nhaarman.mockitokotlin2.verify
 import fr.xgouchet.elmyr.annotation.IntForgery
 import fr.xgouchet.elmyr.annotation.StringForgery

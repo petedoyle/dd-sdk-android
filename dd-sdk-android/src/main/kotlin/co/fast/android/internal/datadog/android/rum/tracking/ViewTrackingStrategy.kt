@@ -5,7 +5,7 @@
  */
 package co.fast.android.internal.datadog.android.rum.tracking
 
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 /**
  * A TrackingStrategy dedicated to views tracking.

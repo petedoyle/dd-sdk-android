@@ -7,7 +7,7 @@
 package co.fast.android.internal.datadog.android.log
 
 import co.fast.android.internal.datadog.android.Datadog
-import com.datadog.android.core.configuration.Credentials
+import co.fast.android.internal.datadog.android.core.configuration.Credentials
 
 /**
  * This class holds constant log attribute keys.

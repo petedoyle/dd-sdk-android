@@ -9,8 +9,8 @@ package co.fast.android.internal.datadog.android.log.internal.domain.event
 import co.fast.android.internal.datadog.android.log.assertj.containsExtraAttributes
 import co.fast.android.internal.datadog.android.log.model.LogEvent
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.assertj.JsonObjectAssert
-import com.datadog.tools.unit.assertj.JsonObjectAssert.Companion.assertThat
+import co.fast.android.internal.datadog.tools.unit.assertj.JsonObjectAssert
+import co.fast.android.internal.datadog.tools.unit.assertj.JsonObjectAssert.Companion.assertThat
 import com.google.gson.JsonParser
 import fr.xgouchet.elmyr.Forge
 import fr.xgouchet.elmyr.annotation.Forgery

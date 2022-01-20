@@ -6,14 +6,14 @@
 
 package co.fast.android.internal.datadog.android.log.internal.domain
 
-import com.datadog.android.core.internal.net.info.NetworkInfoProvider
-import com.datadog.android.core.internal.time.TimeProvider
-import com.datadog.android.core.model.NetworkInfo
-import com.datadog.android.core.model.UserInfo
-import com.datadog.android.log.LogAttributes
-import com.datadog.android.log.internal.user.UserInfoProvider
-import com.datadog.android.log.model.LogEvent
-import com.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.core.internal.net.info.NetworkInfoProvider
+import co.fast.android.internal.datadog.android.core.internal.time.TimeProvider
+import co.fast.android.internal.datadog.android.core.model.NetworkInfo
+import co.fast.android.internal.datadog.android.core.model.UserInfo
+import co.fast.android.internal.datadog.android.log.LogAttributes
+import co.fast.android.internal.datadog.android.log.internal.user.UserInfoProvider
+import co.fast.android.internal.datadog.android.log.model.LogEvent
+import co.fast.android.internal.datadog.android.rum.GlobalRum
 import io.opentracing.util.GlobalTracer
 import java.text.SimpleDateFormat
 import java.util.Date

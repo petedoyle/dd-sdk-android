@@ -7,9 +7,9 @@
 package co.fast.android.internal.datadog.android.rum.internal.instrumentation
 
 import android.app.Activity
-import com.datadog.android.rum.internal.instrumentation.gestures.GesturesTracker
-import com.datadog.android.rum.internal.tracking.UserActionTrackingStrategy
-import com.datadog.android.rum.tracking.ActivityLifecycleTrackingStrategy
+import co.fast.android.internal.datadog.android.rum.internal.instrumentation.gestures.GesturesTracker
+import co.fast.android.internal.datadog.android.rum.internal.tracking.UserActionTrackingStrategy
+import co.fast.android.internal.datadog.android.rum.tracking.ActivityLifecycleTrackingStrategy
 
 internal class UserActionTrackingStrategyLegacy(
     internal val gesturesTracker: GesturesTracker

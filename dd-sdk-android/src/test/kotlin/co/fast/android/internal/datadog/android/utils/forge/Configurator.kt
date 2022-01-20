@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.utils.forge
 
-import com.datadog.tools.unit.forge.BaseConfigurator
+import co.fast.android.internal.datadog.tools.unit.forge.BaseConfigurator
 import fr.xgouchet.elmyr.Forge
 import fr.xgouchet.elmyr.jvm.useJvmFactories
 

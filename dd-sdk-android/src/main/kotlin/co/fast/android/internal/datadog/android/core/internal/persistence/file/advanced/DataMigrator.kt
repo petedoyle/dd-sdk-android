@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced
 
-import com.datadog.android.core.internal.persistence.file.FileOrchestrator
-import com.datadog.android.privacy.TrackingConsent
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileOrchestrator
+import co.fast.android.internal.datadog.android.privacy.TrackingConsent
 
 internal interface DataMigrator {
 

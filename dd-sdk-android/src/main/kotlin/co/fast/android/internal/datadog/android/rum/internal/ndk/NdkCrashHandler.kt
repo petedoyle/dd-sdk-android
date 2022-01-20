@@ -6,9 +6,9 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.ndk
 
-import com.datadog.android.core.internal.persistence.DataWriter
-import com.datadog.android.log.model.LogEvent
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataWriter
+import co.fast.android.internal.datadog.android.log.model.LogEvent
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 @NoOpImplementation
 internal interface NdkCrashHandler {

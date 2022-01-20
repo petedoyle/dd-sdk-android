@@ -13,7 +13,7 @@ import co.fast.android.internal.datadog.android.log.internal.logger.LogHandler
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
 import co.fast.android.internal.datadog.android.utils.mockDevLogHandler
 import co.fast.android.internal.datadog.android.utils.times
-import com.datadog.tools.unit.setStaticValue
+import co.fast.android.internal.datadog.tools.unit.setStaticValue
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.verifyZeroInteractions
 import fr.xgouchet.elmyr.Case

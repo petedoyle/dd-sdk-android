@@ -6,13 +6,13 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.domain.event
 
-import com.datadog.android.core.internal.persistence.Deserializer
-import com.datadog.android.core.internal.utils.sdkLogger
-import com.datadog.android.rum.model.ActionEvent
-import com.datadog.android.rum.model.ErrorEvent
-import com.datadog.android.rum.model.LongTaskEvent
-import com.datadog.android.rum.model.ResourceEvent
-import com.datadog.android.rum.model.ViewEvent
+import co.fast.android.internal.datadog.android.core.internal.persistence.Deserializer
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.rum.model.ActionEvent
+import co.fast.android.internal.datadog.android.rum.model.ErrorEvent
+import co.fast.android.internal.datadog.android.rum.model.LongTaskEvent
+import co.fast.android.internal.datadog.android.rum.model.ResourceEvent
+import co.fast.android.internal.datadog.android.rum.model.ViewEvent
 import com.google.gson.JsonParseException
 import com.google.gson.JsonParser
 import java.util.Locale

@@ -7,7 +7,7 @@
 package co.fast.android.internal.datadog.android.plugin
 
 import android.content.Context
-import com.datadog.android.privacy.TrackingConsent
+import co.fast.android.internal.datadog.android.privacy.TrackingConsent
 
 /**
  * Used to deliver the context from the SDK internals to a [DatadogPlugin] implementation.

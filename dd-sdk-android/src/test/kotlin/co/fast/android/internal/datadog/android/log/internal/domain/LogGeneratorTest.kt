@@ -20,11 +20,11 @@ import co.fast.android.internal.datadog.android.utils.extension.asLogStatus
 import co.fast.android.internal.datadog.android.utils.extension.toIsoFormattedTimestamp
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
 import co.fast.android.internal.datadog.opentracing.DDSpanContext
-import com.datadog.tools.unit.annotations.TestConfigurationsProvider
-import com.datadog.tools.unit.extensions.TestConfigurationExtension
-import com.datadog.tools.unit.extensions.config.TestConfiguration
-import com.datadog.tools.unit.forge.aThrowable
-import com.datadog.tools.unit.setStaticValue
+import co.fast.android.internal.datadog.tools.unit.annotations.TestConfigurationsProvider
+import co.fast.android.internal.datadog.tools.unit.extensions.TestConfigurationExtension
+import co.fast.android.internal.datadog.tools.unit.extensions.config.TestConfiguration
+import co.fast.android.internal.datadog.tools.unit.forge.aThrowable
+import co.fast.android.internal.datadog.tools.unit.setStaticValue
 import co.fast.android.internal.datadog.trace.api.interceptor.MutableSpan
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.whenever

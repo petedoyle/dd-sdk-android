@@ -9,7 +9,7 @@ package co.fast.android.internal.datadog.android.utils.forge
 import co.fast.android.internal.datadog.android.core.model.NetworkInfo
 import co.fast.android.internal.datadog.android.core.model.UserInfo
 import co.fast.android.internal.datadog.android.log.model.LogEvent
-import com.datadog.tools.unit.forge.aThrowable
+import co.fast.android.internal.datadog.tools.unit.forge.aThrowable
 import fr.xgouchet.elmyr.Forge
 import fr.xgouchet.elmyr.ForgeryFactory
 

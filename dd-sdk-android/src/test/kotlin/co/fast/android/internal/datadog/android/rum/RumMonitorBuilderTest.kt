@@ -19,9 +19,9 @@ import co.fast.android.internal.datadog.android.utils.config.ApplicationContextT
 import co.fast.android.internal.datadog.android.utils.config.CoreFeatureTestConfiguration
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
 import co.fast.android.internal.datadog.android.utils.mockDevLogHandler
-import com.datadog.tools.unit.annotations.TestConfigurationsProvider
-import com.datadog.tools.unit.extensions.TestConfigurationExtension
-import com.datadog.tools.unit.extensions.config.TestConfiguration
+import co.fast.android.internal.datadog.tools.unit.annotations.TestConfigurationsProvider
+import co.fast.android.internal.datadog.tools.unit.extensions.TestConfigurationExtension
+import co.fast.android.internal.datadog.tools.unit.extensions.config.TestConfiguration
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
 import fr.xgouchet.elmyr.annotation.FloatForgery

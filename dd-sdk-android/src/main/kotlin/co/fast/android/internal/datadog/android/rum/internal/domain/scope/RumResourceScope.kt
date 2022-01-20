@@ -6,19 +6,19 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.domain.scope
 
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.net.FirstPartyHostDetector
-import com.datadog.android.core.internal.persistence.DataWriter
-import com.datadog.android.core.internal.utils.loggableStackTrace
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.RumAttributes
-import com.datadog.android.rum.RumErrorSource
-import com.datadog.android.rum.RumResourceKind
-import com.datadog.android.rum.internal.domain.RumContext
-import com.datadog.android.rum.internal.domain.Time
-import com.datadog.android.rum.internal.domain.event.ResourceTiming
-import com.datadog.android.rum.model.ErrorEvent
-import com.datadog.android.rum.model.ResourceEvent
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.net.FirstPartyHostDetector
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataWriter
+import co.fast.android.internal.datadog.android.core.internal.utils.loggableStackTrace
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.RumAttributes
+import co.fast.android.internal.datadog.android.rum.RumErrorSource
+import co.fast.android.internal.datadog.android.rum.RumResourceKind
+import co.fast.android.internal.datadog.android.rum.internal.domain.RumContext
+import co.fast.android.internal.datadog.android.rum.internal.domain.Time
+import co.fast.android.internal.datadog.android.rum.internal.domain.event.ResourceTiming
+import co.fast.android.internal.datadog.android.rum.model.ErrorEvent
+import co.fast.android.internal.datadog.android.rum.model.ResourceEvent
 import java.net.MalformedURLException
 import java.net.URL
 import java.util.Locale

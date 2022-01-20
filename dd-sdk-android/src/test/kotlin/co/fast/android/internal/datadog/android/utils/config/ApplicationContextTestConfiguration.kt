@@ -10,7 +10,7 @@ import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
-import com.datadog.tools.unit.extensions.config.MockTestConfiguration
+import co.fast.android.internal.datadog.tools.unit.extensions.config.MockTestConfiguration
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.mock

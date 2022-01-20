@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file
 
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 import java.io.File
 
 /**

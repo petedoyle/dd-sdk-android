@@ -16,7 +16,7 @@ import co.fast.android.internal.datadog.android.log.internal.user.UserInfoProvid
 import co.fast.android.internal.datadog.android.tracing.assertj.SpanEventAssert.Companion.assertThat
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
 import co.fast.android.internal.datadog.opentracing.DDSpan
-import com.datadog.tools.unit.setFieldValue
+import co.fast.android.internal.datadog.tools.unit.setFieldValue
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.whenever
 import fr.xgouchet.elmyr.Forge

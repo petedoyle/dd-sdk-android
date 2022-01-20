@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence
 
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 /**
  * A class able to write a data (or list of data) with type [T] in a persistence location

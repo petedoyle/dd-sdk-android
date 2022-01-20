@@ -7,9 +7,9 @@
 package co.fast.android.internal.datadog.android.tracing.internal.handlers
 
 import android.util.Log
-import com.datadog.android.core.internal.utils.loggableStackTrace
-import com.datadog.android.log.LogAttributes
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.core.internal.utils.loggableStackTrace
+import co.fast.android.internal.datadog.android.log.LogAttributes
+import co.fast.android.internal.datadog.android.log.Logger
 import co.fast.android.internal.datadog.opentracing.DDSpan
 import co.fast.android.internal.datadog.opentracing.LogHandler
 import co.fast.android.internal.datadog.trace.api.DDTags

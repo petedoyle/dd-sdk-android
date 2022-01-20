@@ -1,3 +1,9 @@
+/*
+ * Unless explicitly stated otherwise all files in this repository are licensed under the Apache License Version 2.0.
+ * This product includes software developed at Datadog (https://www.datadoghq.com/).
+ * Copyright 2016-Present Datadog, Inc.
+ */
+
 @file:Suppress("DEPRECATION")
 
 package co.fast.android.internal.datadog.android.rum.internal.tracking
@@ -10,13 +16,13 @@ import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
-import com.datadog.android.core.internal.utils.resolveViewName
-import com.datadog.android.core.internal.utils.runIfValid
-import com.datadog.android.rum.RumMonitor
-import com.datadog.android.rum.internal.RumFeature
-import com.datadog.android.rum.internal.monitor.AdvancedRumMonitor
-import com.datadog.android.rum.model.ViewEvent
-import com.datadog.android.rum.tracking.ComponentPredicate
+import co.fast.android.internal.datadog.android.core.internal.utils.resolveViewName
+import co.fast.android.internal.datadog.android.core.internal.utils.runIfValid
+import co.fast.android.internal.datadog.android.rum.RumMonitor
+import co.fast.android.internal.datadog.android.rum.internal.RumFeature
+import co.fast.android.internal.datadog.android.rum.internal.monitor.AdvancedRumMonitor
+import co.fast.android.internal.datadog.android.rum.model.ViewEvent
+import co.fast.android.internal.datadog.android.rum.tracking.ComponentPredicate
 
 @Suppress("DEPRECATION")
 @RequiresApi(Build.VERSION_CODES.O)

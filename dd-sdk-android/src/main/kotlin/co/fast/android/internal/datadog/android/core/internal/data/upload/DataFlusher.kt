@@ -6,10 +6,10 @@
 
 package co.fast.android.internal.datadog.android.core.internal.data.upload
 
-import com.datadog.android.core.internal.net.DataUploader
-import com.datadog.android.core.internal.persistence.PayloadDecoration
-import com.datadog.android.core.internal.persistence.file.FileHandler
-import com.datadog.android.core.internal.persistence.file.FileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.net.DataUploader
+import co.fast.android.internal.datadog.android.core.internal.persistence.PayloadDecoration
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileHandler
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileOrchestrator
 
 internal class DataFlusher(
     internal val fileOrchestrator: FileOrchestrator,

@@ -9,7 +9,7 @@ package co.fast.android.internal.datadog.android.log.assertj
 import co.fast.android.internal.datadog.android.core.internal.utils.NULL_MAP_VALUE
 import co.fast.android.internal.datadog.android.core.internal.utils.toJsonArray
 import co.fast.android.internal.datadog.android.core.internal.utils.toJsonObject
-import com.datadog.tools.unit.assertj.JsonObjectAssert
+import co.fast.android.internal.datadog.tools.unit.assertj.JsonObjectAssert
 import com.google.gson.JsonArray
 import com.google.gson.JsonObject
 import java.util.Date

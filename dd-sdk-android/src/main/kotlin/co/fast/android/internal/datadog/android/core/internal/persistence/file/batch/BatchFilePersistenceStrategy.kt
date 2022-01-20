@@ -6,16 +6,16 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.batch
 
-import com.datadog.android.core.internal.data.upload.DataFlusher
-import com.datadog.android.core.internal.data.upload.Flusher
-import com.datadog.android.core.internal.persistence.DataReader
-import com.datadog.android.core.internal.persistence.DataWriter
-import com.datadog.android.core.internal.persistence.PayloadDecoration
-import com.datadog.android.core.internal.persistence.PersistenceStrategy
-import com.datadog.android.core.internal.persistence.Serializer
-import com.datadog.android.core.internal.persistence.file.FileOrchestrator
-import com.datadog.android.core.internal.persistence.file.advanced.ScheduledWriter
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.core.internal.data.upload.DataFlusher
+import co.fast.android.internal.datadog.android.core.internal.data.upload.Flusher
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataReader
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataWriter
+import co.fast.android.internal.datadog.android.core.internal.persistence.PayloadDecoration
+import co.fast.android.internal.datadog.android.core.internal.persistence.PersistenceStrategy
+import co.fast.android.internal.datadog.android.core.internal.persistence.Serializer
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced.ScheduledWriter
+import co.fast.android.internal.datadog.android.log.Logger
 import java.util.concurrent.ExecutorService
 
 internal open class BatchFilePersistenceStrategy<T : Any>(

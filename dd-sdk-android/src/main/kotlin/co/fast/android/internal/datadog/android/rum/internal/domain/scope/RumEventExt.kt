@@ -7,17 +7,17 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.domain.scope
 
-import com.datadog.android.core.internal.utils.sdkLogger
-import com.datadog.android.core.model.NetworkInfo
-import com.datadog.android.rum.RumActionType
-import com.datadog.android.rum.RumErrorSource
-import com.datadog.android.rum.RumResourceKind
-import com.datadog.android.rum.internal.RumErrorSourceType
-import com.datadog.android.rum.internal.domain.event.ResourceTiming
-import com.datadog.android.rum.model.ActionEvent
-import com.datadog.android.rum.model.ErrorEvent
-import com.datadog.android.rum.model.LongTaskEvent
-import com.datadog.android.rum.model.ResourceEvent
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.core.model.NetworkInfo
+import co.fast.android.internal.datadog.android.rum.RumActionType
+import co.fast.android.internal.datadog.android.rum.RumErrorSource
+import co.fast.android.internal.datadog.android.rum.RumResourceKind
+import co.fast.android.internal.datadog.android.rum.internal.RumErrorSourceType
+import co.fast.android.internal.datadog.android.rum.internal.domain.event.ResourceTiming
+import co.fast.android.internal.datadog.android.rum.model.ActionEvent
+import co.fast.android.internal.datadog.android.rum.model.ErrorEvent
+import co.fast.android.internal.datadog.android.rum.model.LongTaskEvent
+import co.fast.android.internal.datadog.android.rum.model.ResourceEvent
 import java.util.Locale
 
 internal fun String.toMethod(): ResourceEvent.Method {

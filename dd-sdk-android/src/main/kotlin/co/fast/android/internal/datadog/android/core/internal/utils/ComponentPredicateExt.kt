@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.core.internal.utils
 
-import com.datadog.android.rum.tracking.ComponentPredicate
+import co.fast.android.internal.datadog.android.rum.tracking.ComponentPredicate
 
 /**
  * Executes the provided operation if the predicate verifies the argument.

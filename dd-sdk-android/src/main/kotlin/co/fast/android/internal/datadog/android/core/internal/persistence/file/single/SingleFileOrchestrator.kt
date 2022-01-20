@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.single
 
-import com.datadog.android.core.internal.persistence.file.FileOrchestrator
-import com.datadog.android.core.internal.persistence.file.mkdirsSafe
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.mkdirsSafe
 import java.io.File
 
 internal class SingleFileOrchestrator(

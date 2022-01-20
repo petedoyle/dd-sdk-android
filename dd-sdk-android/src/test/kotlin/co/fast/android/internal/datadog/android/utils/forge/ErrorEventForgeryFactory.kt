@@ -8,7 +8,7 @@ package co.fast.android.internal.datadog.android.utils.forge
 
 import co.fast.android.internal.datadog.android.core.internal.utils.loggableStackTrace
 import co.fast.android.internal.datadog.android.rum.model.ErrorEvent
-import com.datadog.tools.unit.forge.aThrowable
+import co.fast.android.internal.datadog.tools.unit.forge.aThrowable
 import fr.xgouchet.elmyr.Forge
 import fr.xgouchet.elmyr.ForgeryFactory
 import fr.xgouchet.elmyr.jvm.ext.aTimestamp

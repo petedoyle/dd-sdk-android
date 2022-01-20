@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.log.internal.net
 
-import com.datadog.android.core.internal.net.DataOkHttpUploaderV2
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.core.internal.net.DataOkHttpUploaderV2
+import co.fast.android.internal.datadog.android.log.Logger
 import okhttp3.Call
 
 internal open class LogsOkHttpUploaderV2(

@@ -6,14 +6,14 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.domain.scope
 
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.persistence.DataWriter
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.RumActionType
-import com.datadog.android.rum.internal.domain.RumContext
-import com.datadog.android.rum.internal.domain.Time
-import com.datadog.android.rum.model.ActionEvent
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataWriter
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.RumActionType
+import co.fast.android.internal.datadog.android.rum.internal.domain.RumContext
+import co.fast.android.internal.datadog.android.rum.internal.domain.Time
+import co.fast.android.internal.datadog.android.rum.model.ActionEvent
 import java.lang.ref.WeakReference
 import java.util.UUID
 import java.util.concurrent.TimeUnit

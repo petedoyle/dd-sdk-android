@@ -1,12 +1,18 @@
+/*
+ * Unless explicitly stated otherwise all files in this repository are licensed under the Apache License Version 2.0.
+ * This product includes software developed at Datadog (https://www.datadoghq.com/).
+ * Copyright 2016-Present Datadog, Inc.
+ */
+
 package co.fast.android.internal.datadog.android.rum.internal.tracking
 
 import android.app.Activity
 import android.view.ViewTreeObserver
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.internal.domain.Time
-import com.datadog.android.rum.internal.monitor.AdvancedRumMonitor
-import com.datadog.android.rum.tracking.ActivityLifecycleTrackingStrategy
-import com.datadog.android.rum.tracking.TrackingStrategy
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.internal.domain.Time
+import co.fast.android.internal.datadog.android.rum.internal.monitor.AdvancedRumMonitor
+import co.fast.android.internal.datadog.android.rum.tracking.ActivityLifecycleTrackingStrategy
+import co.fast.android.internal.datadog.android.rum.tracking.TrackingStrategy
 
 internal class ViewTreeChangeTrackingStrategy :
     ActivityLifecycleTrackingStrategy(),

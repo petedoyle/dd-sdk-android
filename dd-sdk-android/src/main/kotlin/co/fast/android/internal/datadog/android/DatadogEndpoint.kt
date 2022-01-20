@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android
 
-import com.datadog.android.core.configuration.Configuration
+import co.fast.android.internal.datadog.android.core.configuration.Configuration
 
 /**
  * This object contains constant values for all the Datadog Endpoint urls used in the SDK.

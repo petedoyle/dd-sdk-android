@@ -7,15 +7,15 @@
 package co.fast.android.internal.datadog.android.rum.internal.ndk
 
 import android.content.Context
-import com.datadog.android.core.internal.persistence.file.FileHandler
-import com.datadog.android.core.internal.persistence.file.advanced.ConsentAwareFileMigrator
-import com.datadog.android.core.internal.persistence.file.advanced.ConsentAwareFileOrchestrator
-import com.datadog.android.core.internal.persistence.file.single.SingleFileOrchestrator
-import com.datadog.android.core.internal.persistence.file.single.SingleItemDataWriter
-import com.datadog.android.core.internal.privacy.ConsentProvider
-import com.datadog.android.core.model.UserInfo
-import com.datadog.android.log.Logger
-import com.datadog.android.log.internal.user.UserInfoSerializer
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileHandler
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced.ConsentAwareFileMigrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced.ConsentAwareFileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.single.SingleFileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.single.SingleItemDataWriter
+import co.fast.android.internal.datadog.android.core.internal.privacy.ConsentProvider
+import co.fast.android.internal.datadog.android.core.model.UserInfo
+import co.fast.android.internal.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.log.internal.user.UserInfoSerializer
 import java.util.concurrent.ExecutorService
 
 internal class NdkUserInfoDataWriter(

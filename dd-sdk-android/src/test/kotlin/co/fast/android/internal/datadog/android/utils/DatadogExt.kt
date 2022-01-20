@@ -10,8 +10,8 @@ import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
 import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
 import co.fast.android.internal.datadog.android.log.Logger
 import co.fast.android.internal.datadog.android.log.internal.logger.LogHandler
-import com.datadog.tools.unit.getFieldValue
-import com.datadog.tools.unit.setFieldValue
+import co.fast.android.internal.datadog.tools.unit.getFieldValue
+import co.fast.android.internal.datadog.tools.unit.setFieldValue
 import com.nhaarman.mockitokotlin2.mock
 
 internal fun mockSdkLogHandler(mockHandler: LogHandler): LogHandler {

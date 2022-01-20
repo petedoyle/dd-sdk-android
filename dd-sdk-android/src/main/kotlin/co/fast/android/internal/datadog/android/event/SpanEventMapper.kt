@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.event
 
-import com.datadog.android.tracing.model.SpanEvent
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.android.tracing.model.SpanEvent
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 /**
  * An interface which can be implemented to modify the writable attributes inside a SpanEvent.

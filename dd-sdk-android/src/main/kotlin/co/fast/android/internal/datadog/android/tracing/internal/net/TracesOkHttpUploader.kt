@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.tracing.internal.net
 
-import com.datadog.android.core.internal.net.DataOkHttpUploader
+import co.fast.android.internal.datadog.android.core.internal.net.DataOkHttpUploader
 import java.util.Locale
 import okhttp3.Call
 

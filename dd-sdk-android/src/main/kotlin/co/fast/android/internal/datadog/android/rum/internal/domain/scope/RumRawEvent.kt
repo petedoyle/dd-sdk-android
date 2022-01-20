@@ -6,13 +6,13 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.domain.scope
 
-import com.datadog.android.rum.RumActionType
-import com.datadog.android.rum.RumErrorSource
-import com.datadog.android.rum.RumResourceKind
-import com.datadog.android.rum.internal.RumErrorSourceType
-import com.datadog.android.rum.internal.domain.Time
-import com.datadog.android.rum.internal.domain.event.ResourceTiming
-import com.datadog.android.rum.model.ViewEvent
+import co.fast.android.internal.datadog.android.rum.RumActionType
+import co.fast.android.internal.datadog.android.rum.RumErrorSource
+import co.fast.android.internal.datadog.android.rum.RumResourceKind
+import co.fast.android.internal.datadog.android.rum.internal.RumErrorSourceType
+import co.fast.android.internal.datadog.android.rum.internal.domain.Time
+import co.fast.android.internal.datadog.android.rum.internal.domain.event.ResourceTiming
+import co.fast.android.internal.datadog.android.rum.model.ViewEvent
 
 internal sealed class RumRawEvent {
 

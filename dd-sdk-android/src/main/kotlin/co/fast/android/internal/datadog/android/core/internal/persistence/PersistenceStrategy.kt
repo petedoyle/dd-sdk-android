@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence
 
-import com.datadog.android.core.internal.data.upload.Flusher
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.android.core.internal.data.upload.Flusher
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 /**
  * A class that can coordinate matching [DataWriter] and [DataReader].

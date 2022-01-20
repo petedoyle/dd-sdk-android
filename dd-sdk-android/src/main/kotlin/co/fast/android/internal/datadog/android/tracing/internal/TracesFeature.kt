@@ -7,14 +7,14 @@
 package co.fast.android.internal.datadog.android.tracing.internal
 
 import android.content.Context
-import com.datadog.android.core.configuration.Configuration
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.SdkFeature
-import com.datadog.android.core.internal.net.DataUploader
-import com.datadog.android.core.internal.persistence.PersistenceStrategy
-import com.datadog.android.core.internal.utils.sdkLogger
-import com.datadog.android.tracing.internal.domain.TracesFilePersistenceStrategy
-import com.datadog.android.tracing.internal.net.TracesOkHttpUploaderV2
+import co.fast.android.internal.datadog.android.core.configuration.Configuration
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.SdkFeature
+import co.fast.android.internal.datadog.android.core.internal.net.DataUploader
+import co.fast.android.internal.datadog.android.core.internal.persistence.PersistenceStrategy
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.tracing.internal.domain.TracesFilePersistenceStrategy
+import co.fast.android.internal.datadog.android.tracing.internal.net.TracesOkHttpUploaderV2
 import co.fast.android.internal.datadog.opentracing.DDSpan
 
 internal object TracesFeature : SdkFeature<DDSpan, Configuration.Feature.Tracing>() {

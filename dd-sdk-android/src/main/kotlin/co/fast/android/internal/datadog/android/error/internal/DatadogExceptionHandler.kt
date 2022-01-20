@@ -7,16 +7,16 @@
 package co.fast.android.internal.datadog.android.error.internal
 
 import android.content.Context
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.persistence.DataWriter
-import com.datadog.android.core.internal.thread.waitToIdle
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.core.internal.utils.triggerUploadWorker
-import com.datadog.android.log.internal.domain.LogGenerator
-import com.datadog.android.log.model.LogEvent
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.RumErrorSource
-import com.datadog.android.rum.internal.monitor.AdvancedRumMonitor
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataWriter
+import co.fast.android.internal.datadog.android.core.internal.thread.waitToIdle
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.core.internal.utils.triggerUploadWorker
+import co.fast.android.internal.datadog.android.log.internal.domain.LogGenerator
+import co.fast.android.internal.datadog.android.log.model.LogEvent
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.RumErrorSource
+import co.fast.android.internal.datadog.android.rum.internal.monitor.AdvancedRumMonitor
 import java.lang.ref.WeakReference
 import java.util.concurrent.ThreadPoolExecutor
 

@@ -10,7 +10,7 @@ import android.app.Activity
 import android.app.Application
 import android.content.Context
 import android.os.Bundle
-import com.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
 
 /**
  * The ActivityLifecycleTrackingStrategy as an [Application.ActivityLifecycleCallbacks]

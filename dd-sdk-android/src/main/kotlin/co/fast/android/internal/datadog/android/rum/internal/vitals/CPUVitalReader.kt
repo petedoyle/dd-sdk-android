@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.vitals
 
-import com.datadog.android.core.internal.persistence.file.canReadSafe
-import com.datadog.android.core.internal.persistence.file.existsSafe
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.canReadSafe
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.existsSafe
 import java.io.File
 
 /**

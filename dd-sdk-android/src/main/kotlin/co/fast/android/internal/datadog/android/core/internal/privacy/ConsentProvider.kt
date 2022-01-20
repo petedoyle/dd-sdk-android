@@ -6,9 +6,9 @@
 
 package co.fast.android.internal.datadog.android.core.internal.privacy
 
-import com.datadog.android.privacy.TrackingConsent
-import com.datadog.android.privacy.TrackingConsentProviderCallback
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.android.privacy.TrackingConsent
+import co.fast.android.internal.datadog.android.privacy.TrackingConsentProviderCallback
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 @NoOpImplementation
 internal interface ConsentProvider {

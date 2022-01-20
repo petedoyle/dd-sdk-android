@@ -7,17 +7,17 @@
 package co.fast.android.internal.datadog.android.core.internal
 
 import android.content.Context
-import com.datadog.android.core.configuration.Configuration
-import com.datadog.android.core.internal.data.upload.DataUploadScheduler
-import com.datadog.android.core.internal.data.upload.NoOpUploadScheduler
-import com.datadog.android.core.internal.data.upload.UploadScheduler
-import com.datadog.android.core.internal.net.DataUploader
-import com.datadog.android.core.internal.net.NoOpDataUploader
-import com.datadog.android.core.internal.persistence.NoOpPersistenceStrategy
-import com.datadog.android.core.internal.persistence.PersistenceStrategy
-import com.datadog.android.core.internal.privacy.ConsentProvider
-import com.datadog.android.plugin.DatadogPlugin
-import com.datadog.android.plugin.DatadogPluginConfig
+import co.fast.android.internal.datadog.android.core.configuration.Configuration
+import co.fast.android.internal.datadog.android.core.internal.data.upload.DataUploadScheduler
+import co.fast.android.internal.datadog.android.core.internal.data.upload.NoOpUploadScheduler
+import co.fast.android.internal.datadog.android.core.internal.data.upload.UploadScheduler
+import co.fast.android.internal.datadog.android.core.internal.net.DataUploader
+import co.fast.android.internal.datadog.android.core.internal.net.NoOpDataUploader
+import co.fast.android.internal.datadog.android.core.internal.persistence.NoOpPersistenceStrategy
+import co.fast.android.internal.datadog.android.core.internal.persistence.PersistenceStrategy
+import co.fast.android.internal.datadog.android.core.internal.privacy.ConsentProvider
+import co.fast.android.internal.datadog.android.plugin.DatadogPlugin
+import co.fast.android.internal.datadog.android.plugin.DatadogPluginConfig
 import java.util.concurrent.atomic.AtomicBoolean
 
 @Suppress("TooManyFunctions")

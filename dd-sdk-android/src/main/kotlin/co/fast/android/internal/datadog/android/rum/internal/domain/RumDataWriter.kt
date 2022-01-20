@@ -6,20 +6,20 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.domain
 
-import com.datadog.android.core.internal.persistence.PayloadDecoration
-import com.datadog.android.core.internal.persistence.Serializer
-import com.datadog.android.core.internal.persistence.file.FileHandler
-import com.datadog.android.core.internal.persistence.file.FileOrchestrator
-import com.datadog.android.core.internal.persistence.file.batch.BatchFileDataWriter
-import com.datadog.android.log.Logger
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.internal.monitor.AdvancedRumMonitor
-import com.datadog.android.rum.internal.monitor.EventType
-import com.datadog.android.rum.model.ActionEvent
-import com.datadog.android.rum.model.ErrorEvent
-import com.datadog.android.rum.model.LongTaskEvent
-import com.datadog.android.rum.model.ResourceEvent
-import com.datadog.android.rum.model.ViewEvent
+import co.fast.android.internal.datadog.android.core.internal.persistence.PayloadDecoration
+import co.fast.android.internal.datadog.android.core.internal.persistence.Serializer
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileHandler
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.batch.BatchFileDataWriter
+import co.fast.android.internal.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.internal.monitor.AdvancedRumMonitor
+import co.fast.android.internal.datadog.android.rum.internal.monitor.EventType
+import co.fast.android.internal.datadog.android.rum.model.ActionEvent
+import co.fast.android.internal.datadog.android.rum.model.ErrorEvent
+import co.fast.android.internal.datadog.android.rum.model.LongTaskEvent
+import co.fast.android.internal.datadog.android.rum.model.ResourceEvent
+import co.fast.android.internal.datadog.android.rum.model.ViewEvent
 import java.io.File
 
 internal class RumDataWriter(

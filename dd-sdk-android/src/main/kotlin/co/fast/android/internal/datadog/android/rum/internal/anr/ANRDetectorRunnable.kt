@@ -7,8 +7,8 @@
 package co.fast.android.internal.datadog.android.rum.internal.anr
 
 import android.os.Handler
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.RumErrorSource
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.RumErrorSource
 
 /**
  * A Runnable running on a background thread detecting ANR on the main thread.

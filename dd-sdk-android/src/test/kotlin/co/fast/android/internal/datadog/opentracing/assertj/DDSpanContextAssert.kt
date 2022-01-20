@@ -4,7 +4,7 @@
  * Copyright 2016-Present Datadog, Inc.
  */
 
-package com.datadog.opentracing.assertj
+package co.fast.android.internal.datadog.opentracing.assertj
 
 import co.fast.android.internal.datadog.opentracing.DDSpanContext
 import java.math.BigInteger

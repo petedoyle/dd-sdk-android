@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.core.internal.thread
 
-import com.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
 
 /**
  * A utility method to perform a Thread.sleep() safely.

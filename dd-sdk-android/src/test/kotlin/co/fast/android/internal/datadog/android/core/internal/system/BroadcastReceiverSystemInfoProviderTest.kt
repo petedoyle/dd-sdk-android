@@ -13,8 +13,8 @@ import android.os.Build
 import android.os.PowerManager
 import co.fast.android.internal.datadog.android.log.assertj.SystemInfoAssert.Companion.assertThat
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.annotations.TestTargetApi
-import com.datadog.tools.unit.extensions.ApiLevelExtension
+import co.fast.android.internal.datadog.tools.unit.annotations.TestTargetApi
+import co.fast.android.internal.datadog.tools.unit.extensions.ApiLevelExtension
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.doAnswer
 import com.nhaarman.mockitokotlin2.doReturn

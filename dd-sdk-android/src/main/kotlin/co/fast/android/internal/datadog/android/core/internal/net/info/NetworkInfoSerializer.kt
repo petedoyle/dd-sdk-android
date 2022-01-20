@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.core.internal.net.info
 
-import com.datadog.android.core.internal.persistence.Serializer
-import com.datadog.android.core.model.NetworkInfo
+import co.fast.android.internal.datadog.android.core.internal.persistence.Serializer
+import co.fast.android.internal.datadog.android.core.model.NetworkInfo
 
 internal class NetworkInfoSerializer :
     Serializer<NetworkInfo> {

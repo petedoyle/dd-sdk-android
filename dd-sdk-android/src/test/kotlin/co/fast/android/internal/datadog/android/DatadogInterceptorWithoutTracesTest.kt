@@ -29,9 +29,9 @@ import co.fast.android.internal.datadog.android.utils.mockDevLogHandler
 import co.fast.android.internal.datadog.opentracing.DDSpan
 import co.fast.android.internal.datadog.opentracing.DDSpanContext
 import co.fast.android.internal.datadog.opentracing.DDTracer
-import com.datadog.tools.unit.annotations.TestConfigurationsProvider
-import com.datadog.tools.unit.extensions.TestConfigurationExtension
-import com.datadog.tools.unit.extensions.config.TestConfiguration
+import co.fast.android.internal.datadog.tools.unit.annotations.TestConfigurationsProvider
+import co.fast.android.internal.datadog.tools.unit.extensions.TestConfigurationExtension
+import co.fast.android.internal.datadog.tools.unit.extensions.config.TestConfiguration
 import co.fast.android.internal.datadog.trace.api.interceptor.MutableSpan
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.anyOrNull

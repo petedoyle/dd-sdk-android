@@ -6,12 +6,12 @@
 
 package co.fast.android.internal.datadog.android.core.internal.utils
 
-import com.datadog.android.BuildConfig
+import co.fast.android.internal.datadog.android.BuildConfig
 import co.fast.android.internal.datadog.android.Datadog
-import com.datadog.android.log.Logger
-import com.datadog.android.log.internal.logger.ConditionalLogHandler
-import com.datadog.android.log.internal.logger.LogcatLogHandler
-import com.datadog.android.monitoring.internal.InternalLogsFeature
+import co.fast.android.internal.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.log.internal.logger.ConditionalLogHandler
+import co.fast.android.internal.datadog.android.log.internal.logger.LogcatLogHandler
+import co.fast.android.internal.datadog.android.monitoring.internal.InternalLogsFeature
 import java.util.Locale
 
 internal const val SDK_LOG_PREFIX = "DD_LOG"

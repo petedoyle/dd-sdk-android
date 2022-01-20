@@ -18,14 +18,14 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.DialogFragmentNavigator
 import androidx.navigation.fragment.FragmentNavigator
 import androidx.navigation.fragment.NavHostFragment
-import com.datadog.android.core.internal.utils.resolveViewName
-import com.datadog.android.core.internal.utils.runIfValid
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.NoOpRumMonitor
-import com.datadog.android.rum.internal.monitor.AdvancedRumMonitor
-import com.datadog.android.rum.internal.monitor.NoOpAdvancedRumMonitor
-import com.datadog.android.rum.internal.tracking.AndroidXFragmentLifecycleCallbacks
-import com.datadog.android.rum.model.ViewEvent
+import co.fast.android.internal.datadog.android.core.internal.utils.resolveViewName
+import co.fast.android.internal.datadog.android.core.internal.utils.runIfValid
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.NoOpRumMonitor
+import co.fast.android.internal.datadog.android.rum.internal.monitor.AdvancedRumMonitor
+import co.fast.android.internal.datadog.android.rum.internal.monitor.NoOpAdvancedRumMonitor
+import co.fast.android.internal.datadog.android.rum.internal.tracking.AndroidXFragmentLifecycleCallbacks
+import co.fast.android.internal.datadog.android.rum.model.ViewEvent
 import java.lang.IllegalStateException
 import java.util.WeakHashMap
 

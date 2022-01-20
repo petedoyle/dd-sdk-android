@@ -6,16 +6,16 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.batch
 
-import com.datadog.android.core.internal.persistence.file.FileOrchestrator
-import com.datadog.android.core.internal.persistence.file.FilePersistenceConfig
-import com.datadog.android.core.internal.persistence.file.canWriteSafe
-import com.datadog.android.core.internal.persistence.file.deleteSafe
-import com.datadog.android.core.internal.persistence.file.existsSafe
-import com.datadog.android.core.internal.persistence.file.isFileSafe
-import com.datadog.android.core.internal.persistence.file.lengthSafe
-import com.datadog.android.core.internal.persistence.file.listFilesSafe
-import com.datadog.android.core.internal.persistence.file.mkdirsSafe
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FilePersistenceConfig
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.canWriteSafe
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.deleteSafe
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.existsSafe
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.isFileSafe
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.lengthSafe
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.listFilesSafe
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.mkdirsSafe
+import co.fast.android.internal.datadog.android.log.Logger
 import java.io.File
 import java.io.FileFilter
 import java.util.Locale

@@ -410,7 +410,7 @@ public class DDTracer implements io.opentracing.Tracer, Closeable, Tracer {
     private static DDScopeEventFactory createScopeEventFactory() {
         try {
             return (DDScopeEventFactory)
-                    Class.forName("com.datadog.opentracing.jfr.openjdk.ScopeEventFactory").newInstance();
+                    Class.forName("co.fast.android.internal.datadog.opentracing.jfr.openjdk.ScopeEventFactory").newInstance();
         } catch (final ClassFormatError | ReflectiveOperationException | NoClassDefFoundError e) {
         }
         return new DDNoopScopeEventFactory();

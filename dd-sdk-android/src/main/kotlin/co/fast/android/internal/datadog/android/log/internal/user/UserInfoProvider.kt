@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.log.internal.user
 
-import com.datadog.android.core.model.UserInfo
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.android.core.model.UserInfo
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 @NoOpImplementation
 internal interface UserInfoProvider {

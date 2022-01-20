@@ -6,11 +6,11 @@
 
 package co.fast.android.internal.datadog.android.log.internal.domain.event
 
-import com.datadog.android.core.internal.constraints.DataConstraints
-import com.datadog.android.core.internal.constraints.DatadogDataConstraints
-import com.datadog.android.core.internal.persistence.Serializer
-import com.datadog.android.log.LogAttributes
-import com.datadog.android.log.model.LogEvent
+import co.fast.android.internal.datadog.android.core.internal.constraints.DataConstraints
+import co.fast.android.internal.datadog.android.core.internal.constraints.DatadogDataConstraints
+import co.fast.android.internal.datadog.android.core.internal.persistence.Serializer
+import co.fast.android.internal.datadog.android.log.LogAttributes
+import co.fast.android.internal.datadog.android.log.model.LogEvent
 
 internal class LogEventSerializer(
     private val dataConstraints: DataConstraints = DatadogDataConstraints()

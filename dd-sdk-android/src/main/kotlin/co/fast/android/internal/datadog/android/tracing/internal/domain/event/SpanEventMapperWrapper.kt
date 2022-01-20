@@ -6,10 +6,10 @@
 
 package co.fast.android.internal.datadog.android.tracing.internal.domain.event
 
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.event.EventMapper
-import com.datadog.android.event.SpanEventMapper
-import com.datadog.android.tracing.model.SpanEvent
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.event.EventMapper
+import co.fast.android.internal.datadog.android.event.SpanEventMapper
+import co.fast.android.internal.datadog.android.tracing.model.SpanEvent
 import java.util.Locale
 
 internal class SpanEventMapperWrapper(private val wrappedEventMapper: SpanEventMapper) :

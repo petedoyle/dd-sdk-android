@@ -13,7 +13,7 @@ import android.view.ViewParent
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
 import co.fast.android.internal.datadog.android.rum.RumAttributes
-import com.datadog.tools.unit.ObjectTest
+import co.fast.android.internal.datadog.tools.unit.ObjectTest
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
 import fr.xgouchet.elmyr.Forge

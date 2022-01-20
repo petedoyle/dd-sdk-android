@@ -13,9 +13,9 @@ import co.fast.android.internal.datadog.android.core.internal.net.DataOkHttpUplo
 import co.fast.android.internal.datadog.android.utils.config.ApplicationContextTestConfiguration
 import co.fast.android.internal.datadog.android.utils.config.CoreFeatureTestConfiguration
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.annotations.TestConfigurationsProvider
-import com.datadog.tools.unit.extensions.TestConfigurationExtension
-import com.datadog.tools.unit.extensions.config.TestConfiguration
+import co.fast.android.internal.datadog.tools.unit.annotations.TestConfigurationsProvider
+import co.fast.android.internal.datadog.tools.unit.extensions.TestConfigurationExtension
+import co.fast.android.internal.datadog.tools.unit.extensions.config.TestConfiguration
 import fr.xgouchet.elmyr.junit5.ForgeConfiguration
 import fr.xgouchet.elmyr.junit5.ForgeExtension
 import okhttp3.Call

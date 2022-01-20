@@ -8,7 +8,7 @@ package co.fast.android.internal.datadog.android.core.internal.net
 
 import android.os.Build
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.setStaticValue
+import co.fast.android.internal.datadog.tools.unit.setStaticValue
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.argumentCaptor
 import com.nhaarman.mockitokotlin2.doReturn

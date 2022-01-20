@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced
 
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 /**
  * A [Runnable] used to perform a data migration operation (moving, modifying or deleting files).

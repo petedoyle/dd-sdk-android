@@ -6,12 +6,12 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.domain.scope
 
-import com.datadog.android.core.internal.net.FirstPartyHostDetector
-import com.datadog.android.core.internal.persistence.DataWriter
-import com.datadog.android.core.internal.time.TimeProvider
-import com.datadog.android.rum.RumSessionListener
-import com.datadog.android.rum.internal.domain.RumContext
-import com.datadog.android.rum.internal.vitals.VitalMonitor
+import co.fast.android.internal.datadog.android.core.internal.net.FirstPartyHostDetector
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataWriter
+import co.fast.android.internal.datadog.android.core.internal.time.TimeProvider
+import co.fast.android.internal.datadog.android.rum.RumSessionListener
+import co.fast.android.internal.datadog.android.rum.internal.domain.RumContext
+import co.fast.android.internal.datadog.android.rum.internal.vitals.VitalMonitor
 
 internal class RumApplicationScope(
     applicationId: String,

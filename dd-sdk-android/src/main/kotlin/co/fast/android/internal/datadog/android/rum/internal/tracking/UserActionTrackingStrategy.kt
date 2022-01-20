@@ -5,9 +5,9 @@
  */
 package co.fast.android.internal.datadog.android.rum.internal.tracking
 
-import com.datadog.android.rum.internal.instrumentation.gestures.GesturesTracker
-import com.datadog.android.rum.tracking.TrackingStrategy
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.android.rum.internal.instrumentation.gestures.GesturesTracker
+import co.fast.android.internal.datadog.android.rum.tracking.TrackingStrategy
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 /**
  * A TrackingStrategy dedicated to user actions tracking.

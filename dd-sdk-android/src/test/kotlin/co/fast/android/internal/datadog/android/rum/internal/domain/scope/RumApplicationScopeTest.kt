@@ -12,7 +12,7 @@ import co.fast.android.internal.datadog.android.core.internal.time.TimeProvider
 import co.fast.android.internal.datadog.android.rum.RumSessionListener
 import co.fast.android.internal.datadog.android.rum.internal.vitals.VitalMonitor
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.setFieldValue
+import co.fast.android.internal.datadog.tools.unit.setFieldValue
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.verifyZeroInteractions
 import fr.xgouchet.elmyr.annotation.BoolForgery

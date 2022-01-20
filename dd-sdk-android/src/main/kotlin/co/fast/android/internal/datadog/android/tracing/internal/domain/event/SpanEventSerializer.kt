@@ -6,11 +6,11 @@
 
 package co.fast.android.internal.datadog.android.tracing.internal.domain.event
 
-import com.datadog.android.core.internal.constraints.DataConstraints
-import com.datadog.android.core.internal.constraints.DatadogDataConstraints
-import com.datadog.android.core.internal.persistence.Serializer
-import com.datadog.android.core.internal.utils.NULL_MAP_VALUE
-import com.datadog.android.tracing.model.SpanEvent
+import co.fast.android.internal.datadog.android.core.internal.constraints.DataConstraints
+import co.fast.android.internal.datadog.android.core.internal.constraints.DatadogDataConstraints
+import co.fast.android.internal.datadog.android.core.internal.persistence.Serializer
+import co.fast.android.internal.datadog.android.core.internal.utils.NULL_MAP_VALUE
+import co.fast.android.internal.datadog.android.tracing.model.SpanEvent
 import com.google.gson.JsonArray
 import com.google.gson.JsonObject
 import com.google.gson.JsonPrimitive

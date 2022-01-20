@@ -6,11 +6,11 @@
 
 package co.fast.android.internal.datadog.android
 
-import com.datadog.android.DatadogEventListener.Factory
-import com.datadog.android.core.internal.net.identifyRequest
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.internal.domain.event.ResourceTiming
-import com.datadog.android.rum.internal.monitor.AdvancedRumMonitor
+import co.fast.android.internal.datadog.android.DatadogEventListener.Factory
+import co.fast.android.internal.datadog.android.core.internal.net.identifyRequest
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.internal.domain.event.ResourceTiming
+import co.fast.android.internal.datadog.android.rum.internal.monitor.AdvancedRumMonitor
 import java.io.IOException
 import java.net.InetAddress
 import java.net.InetSocketAddress

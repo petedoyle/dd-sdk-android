@@ -20,7 +20,7 @@ import co.fast.android.internal.datadog.android.rum.tracking.InteractionPredicat
 import co.fast.android.internal.datadog.android.rum.tracking.ViewAttributesProvider
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
 import co.fast.android.internal.datadog.android.utils.mockDevLogHandler
-import com.datadog.tools.unit.extensions.TestConfigurationExtension
+import co.fast.android.internal.datadog.tools.unit.extensions.TestConfigurationExtension
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.argThat
 import com.nhaarman.mockitokotlin2.eq

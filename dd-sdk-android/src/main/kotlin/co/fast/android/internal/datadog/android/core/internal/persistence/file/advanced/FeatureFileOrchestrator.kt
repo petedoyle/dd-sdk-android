@@ -7,12 +7,12 @@
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced
 
 import android.content.Context
-import com.datadog.android.core.internal.persistence.file.FileOrchestrator
-import com.datadog.android.core.internal.persistence.file.FilePersistenceConfig
-import com.datadog.android.core.internal.persistence.file.batch.BatchFileHandler
-import com.datadog.android.core.internal.persistence.file.batch.BatchFileOrchestrator
-import com.datadog.android.core.internal.privacy.ConsentProvider
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FilePersistenceConfig
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.batch.BatchFileHandler
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.batch.BatchFileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.privacy.ConsentProvider
+import co.fast.android.internal.datadog.android.log.Logger
 import java.io.File
 import java.util.Locale
 import java.util.concurrent.ExecutorService

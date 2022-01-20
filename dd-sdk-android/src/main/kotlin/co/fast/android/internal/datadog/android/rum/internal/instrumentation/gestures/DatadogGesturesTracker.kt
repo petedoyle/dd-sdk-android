@@ -8,8 +8,8 @@ package co.fast.android.internal.datadog.android.rum.internal.instrumentation.ge
 
 import android.content.Context
 import android.view.Window
-import com.datadog.android.rum.tracking.InteractionPredicate
-import com.datadog.android.rum.tracking.ViewAttributesProvider
+import co.fast.android.internal.datadog.android.rum.tracking.InteractionPredicate
+import co.fast.android.internal.datadog.android.rum.tracking.ViewAttributesProvider
 import java.lang.ref.WeakReference
 
 internal class DatadogGesturesTracker(

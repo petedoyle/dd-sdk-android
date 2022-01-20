@@ -7,14 +7,14 @@
 package co.fast.android.internal.datadog.android.error.internal
 
 import android.content.Context
-import com.datadog.android.core.internal.persistence.PayloadDecoration
-import com.datadog.android.core.internal.persistence.file.advanced.FeatureFileOrchestrator
-import com.datadog.android.core.internal.persistence.file.batch.BatchFilePersistenceStrategy
-import com.datadog.android.core.internal.privacy.ConsentProvider
-import com.datadog.android.core.internal.utils.sdkLogger
-import com.datadog.android.log.Logger
-import com.datadog.android.log.internal.domain.event.LogEventSerializer
-import com.datadog.android.log.model.LogEvent
+import co.fast.android.internal.datadog.android.core.internal.persistence.PayloadDecoration
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced.FeatureFileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.batch.BatchFilePersistenceStrategy
+import co.fast.android.internal.datadog.android.core.internal.privacy.ConsentProvider
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.log.internal.domain.event.LogEventSerializer
+import co.fast.android.internal.datadog.android.log.model.LogEvent
 import java.util.concurrent.ExecutorService
 
 internal class CrashReportFilePersistenceStrategy(

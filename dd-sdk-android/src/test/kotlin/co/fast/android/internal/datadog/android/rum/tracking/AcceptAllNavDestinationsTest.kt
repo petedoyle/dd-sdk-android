@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.rum.tracking
 
-import com.datadog.tools.unit.ObjectTest
+import co.fast.android.internal.datadog.tools.unit.ObjectTest
 import fr.xgouchet.elmyr.Forge
 import fr.xgouchet.elmyr.junit5.ForgeExtension
 import org.junit.jupiter.api.extension.ExtendWith

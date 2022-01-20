@@ -6,11 +6,11 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced
 
-import com.datadog.android.core.internal.persistence.file.FileHandler
-import com.datadog.android.core.internal.persistence.file.FileOrchestrator
-import com.datadog.android.core.internal.utils.sdkLogger
-import com.datadog.android.log.Logger
-import com.datadog.android.privacy.TrackingConsent
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileHandler
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.privacy.TrackingConsent
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.RejectedExecutionException
 

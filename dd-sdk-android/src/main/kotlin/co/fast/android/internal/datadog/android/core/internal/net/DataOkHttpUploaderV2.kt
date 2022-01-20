@@ -7,8 +7,8 @@
 package co.fast.android.internal.datadog.android.core.internal.net
 
 import android.os.Build
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.log.Logger
 import java.util.Locale
 import java.util.UUID
 import okhttp3.Call

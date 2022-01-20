@@ -4,14 +4,14 @@
  * Copyright 2016-Present Datadog, Inc.
  */
 
-package com.datadog.opentracing
+package co.fast.android.internal.datadog.opentracing
 
 import co.fast.android.internal.datadog.opentracing.DDSpan
 import co.fast.android.internal.datadog.opentracing.DDSpanContext
 import co.fast.android.internal.datadog.opentracing.DDTracer
 import co.fast.android.internal.datadog.opentracing.PendingTrace
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.opentracing.assertj.DDSpanContextAssert.Companion.assertThat
+import co.fast.android.internal.datadog.opentracing.assertj.DDSpanContextAssert.Companion.assertThat
 import co.fast.android.internal.datadog.opentracing.decorators.AbstractDecorator
 import co.fast.android.internal.datadog.trace.api.DDTags
 import co.fast.android.internal.datadog.trace.api.sampling.PrioritySampling

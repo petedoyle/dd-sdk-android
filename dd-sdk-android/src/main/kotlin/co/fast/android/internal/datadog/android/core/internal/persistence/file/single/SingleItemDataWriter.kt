@@ -6,12 +6,12 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.single
 
-import com.datadog.android.core.internal.persistence.DataWriter
-import com.datadog.android.core.internal.persistence.Serializer
-import com.datadog.android.core.internal.persistence.file.FileHandler
-import com.datadog.android.core.internal.persistence.file.FileOrchestrator
-import com.datadog.android.core.internal.persistence.serializeToByteArray
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataWriter
+import co.fast.android.internal.datadog.android.core.internal.persistence.Serializer
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileHandler
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.serializeToByteArray
+import co.fast.android.internal.datadog.android.log.Logger
 
 internal open class SingleItemDataWriter<T : Any>(
     internal val fileOrchestrator: FileOrchestrator,

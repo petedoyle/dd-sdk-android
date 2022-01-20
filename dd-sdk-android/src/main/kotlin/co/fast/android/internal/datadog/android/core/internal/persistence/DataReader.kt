@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence
 
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 /**
  * A class able to read data from a persistence location (e.g. file, database, …).

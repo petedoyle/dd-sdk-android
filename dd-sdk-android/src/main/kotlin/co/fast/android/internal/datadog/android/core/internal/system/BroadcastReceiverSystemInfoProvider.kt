@@ -12,8 +12,8 @@ import android.content.IntentFilter
 import android.os.BatteryManager
 import android.os.Build
 import android.os.PowerManager
-import com.datadog.android.core.internal.receiver.ThreadSafeReceiver
-import com.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.core.internal.receiver.ThreadSafeReceiver
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
 
 internal class BroadcastReceiverSystemInfoProvider :
     ThreadSafeReceiver(), SystemInfoProvider {

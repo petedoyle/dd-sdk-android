@@ -14,7 +14,7 @@ import co.fast.android.internal.datadog.android.core.internal.system.SystemInfoP
 import co.fast.android.internal.datadog.android.core.internal.time.TimeProvider
 import co.fast.android.internal.datadog.android.log.internal.user.MutableUserInfoProvider
 import co.fast.android.internal.datadog.android.privacy.TrackingConsent
-import com.datadog.tools.unit.extensions.config.TestConfiguration
+import co.fast.android.internal.datadog.tools.unit.extensions.config.TestConfiguration
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.mock
 import fr.xgouchet.elmyr.Forge

@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence
 
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.log.Logger
 import java.util.Locale
 
 /**

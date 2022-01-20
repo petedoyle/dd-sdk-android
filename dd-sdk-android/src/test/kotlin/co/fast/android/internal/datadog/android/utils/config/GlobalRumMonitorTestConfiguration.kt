@@ -10,7 +10,7 @@ import co.fast.android.internal.datadog.android.rum.GlobalRum
 import co.fast.android.internal.datadog.android.rum.NoOpRumMonitor
 import co.fast.android.internal.datadog.android.rum.internal.domain.RumContext
 import co.fast.android.internal.datadog.android.rum.internal.monitor.AdvancedRumMonitor
-import com.datadog.tools.unit.extensions.config.MockTestConfiguration
+import co.fast.android.internal.datadog.tools.unit.extensions.config.MockTestConfiguration
 import fr.xgouchet.elmyr.Forge
 
 internal class GlobalRumMonitorTestConfiguration :

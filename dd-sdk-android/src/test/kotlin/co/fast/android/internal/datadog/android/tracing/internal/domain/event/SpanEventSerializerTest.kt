@@ -12,7 +12,7 @@ import co.fast.android.internal.datadog.android.tracing.model.SpanEvent
 import co.fast.android.internal.datadog.android.utils.extension.getString
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
 import co.fast.android.internal.datadog.android.utils.forge.exhaustiveAttributes
-import com.datadog.tools.unit.assertj.JsonObjectAssert
+import co.fast.android.internal.datadog.tools.unit.assertj.JsonObjectAssert
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser
 import com.nhaarman.mockitokotlin2.any

@@ -6,10 +6,10 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.net
 
-import com.datadog.android.BuildConfig
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.net.DataOkHttpUploader
-import com.datadog.android.rum.RumAttributes
+import co.fast.android.internal.datadog.android.BuildConfig
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.net.DataOkHttpUploader
+import co.fast.android.internal.datadog.android.rum.RumAttributes
 import java.util.Locale
 import okhttp3.Call
 

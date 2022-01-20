@@ -7,15 +7,15 @@
 package co.fast.android.internal.datadog.android.log.internal
 
 import android.content.Context
-import com.datadog.android.core.configuration.Configuration
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.SdkFeature
-import com.datadog.android.core.internal.net.DataUploader
-import com.datadog.android.core.internal.persistence.PersistenceStrategy
-import com.datadog.android.core.internal.utils.sdkLogger
-import com.datadog.android.log.internal.domain.LogFilePersistenceStrategy
-import com.datadog.android.log.internal.net.LogsOkHttpUploaderV2
-import com.datadog.android.log.model.LogEvent
+import co.fast.android.internal.datadog.android.core.configuration.Configuration
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.SdkFeature
+import co.fast.android.internal.datadog.android.core.internal.net.DataUploader
+import co.fast.android.internal.datadog.android.core.internal.persistence.PersistenceStrategy
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.log.internal.domain.LogFilePersistenceStrategy
+import co.fast.android.internal.datadog.android.log.internal.net.LogsOkHttpUploaderV2
+import co.fast.android.internal.datadog.android.log.model.LogEvent
 
 internal object LogsFeature : SdkFeature<LogEvent, Configuration.Feature.Logs>() {
 

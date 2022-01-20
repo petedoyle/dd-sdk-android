@@ -15,8 +15,8 @@ import co.fast.android.internal.datadog.android.rum.model.LongTaskEvent
 import co.fast.android.internal.datadog.android.rum.model.ResourceEvent
 import co.fast.android.internal.datadog.android.rum.model.ViewEvent
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.assertj.JsonObjectAssert.Companion.assertThat
-import com.datadog.tools.unit.extensions.ApiLevelExtension
+import co.fast.android.internal.datadog.tools.unit.assertj.JsonObjectAssert.Companion.assertThat
+import co.fast.android.internal.datadog.tools.unit.extensions.ApiLevelExtension
 import com.google.gson.JsonArray
 import com.google.gson.JsonParser
 import com.nhaarman.mockitokotlin2.mock

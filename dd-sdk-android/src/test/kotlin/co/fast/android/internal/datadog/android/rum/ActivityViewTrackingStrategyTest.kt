@@ -14,7 +14,7 @@ import co.fast.android.internal.datadog.android.rum.tracking.ActivityViewTrackin
 import co.fast.android.internal.datadog.android.rum.tracking.ComponentPredicate
 import co.fast.android.internal.datadog.android.rum.tracking.StubComponentPredicate
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.setFieldValue
+import co.fast.android.internal.datadog.tools.unit.setFieldValue
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.inOrder
 import com.nhaarman.mockitokotlin2.verify

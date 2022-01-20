@@ -7,19 +7,19 @@
 package co.fast.android.internal.datadog.android.tracing.internal.domain
 
 import android.content.Context
-import com.datadog.android.core.internal.net.info.NetworkInfoProvider
-import com.datadog.android.core.internal.persistence.PayloadDecoration
-import com.datadog.android.core.internal.persistence.file.advanced.FeatureFileOrchestrator
-import com.datadog.android.core.internal.persistence.file.batch.BatchFilePersistenceStrategy
-import com.datadog.android.core.internal.privacy.ConsentProvider
-import com.datadog.android.core.internal.time.TimeProvider
-import com.datadog.android.event.SpanEventMapper
-import com.datadog.android.log.Logger
-import com.datadog.android.log.internal.user.UserInfoProvider
-import com.datadog.android.tracing.internal.domain.event.DdSpanToSpanEventMapper
-import com.datadog.android.tracing.internal.domain.event.SpanEventMapperWrapper
-import com.datadog.android.tracing.internal.domain.event.SpanEventSerializer
-import com.datadog.android.tracing.internal.domain.event.SpanMapperSerializer
+import co.fast.android.internal.datadog.android.core.internal.net.info.NetworkInfoProvider
+import co.fast.android.internal.datadog.android.core.internal.persistence.PayloadDecoration
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced.FeatureFileOrchestrator
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.batch.BatchFilePersistenceStrategy
+import co.fast.android.internal.datadog.android.core.internal.privacy.ConsentProvider
+import co.fast.android.internal.datadog.android.core.internal.time.TimeProvider
+import co.fast.android.internal.datadog.android.event.SpanEventMapper
+import co.fast.android.internal.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.log.internal.user.UserInfoProvider
+import co.fast.android.internal.datadog.android.tracing.internal.domain.event.DdSpanToSpanEventMapper
+import co.fast.android.internal.datadog.android.tracing.internal.domain.event.SpanEventMapperWrapper
+import co.fast.android.internal.datadog.android.tracing.internal.domain.event.SpanEventSerializer
+import co.fast.android.internal.datadog.android.tracing.internal.domain.event.SpanMapperSerializer
 import co.fast.android.internal.datadog.opentracing.DDSpan
 import java.util.concurrent.ExecutorService
 

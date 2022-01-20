@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.log.internal.user
 
-import com.datadog.android.core.internal.persistence.Serializer
-import com.datadog.android.core.model.UserInfo
+import co.fast.android.internal.datadog.android.core.internal.persistence.Serializer
+import co.fast.android.internal.datadog.android.core.model.UserInfo
 
 internal class UserInfoSerializer :
     Serializer<UserInfo> {

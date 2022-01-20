@@ -10,9 +10,9 @@ import android.util.Log
 import android.webkit.ConsoleMessage
 import android.webkit.WebChromeClient
 import android.webkit.WebViewClient
-import com.datadog.android.log.Logger
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.RumErrorSource
+import co.fast.android.internal.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.RumErrorSource
 
 /**
  * A [WebViewClient] propagating all relevant events to Datadog.

@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.vitals
 
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 @NoOpImplementation
 internal interface VitalMonitor : VitalObserver {

@@ -6,9 +6,9 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.domain.scope
 
-import com.datadog.android.core.internal.persistence.DataWriter
-import com.datadog.android.rum.internal.domain.RumContext
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataWriter
+import co.fast.android.internal.datadog.android.rum.internal.domain.RumContext
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 @NoOpImplementation
 internal interface RumScope {

@@ -6,9 +6,9 @@
 
 package co.fast.android.internal.datadog.android.rum
 
-import com.datadog.android.DatadogInterceptor
-import com.datadog.android.core.configuration.Configuration
-import com.datadog.android.rum.tracking.ViewTrackingStrategy
+import co.fast.android.internal.datadog.android.DatadogInterceptor
+import co.fast.android.internal.datadog.android.core.configuration.Configuration
+import co.fast.android.internal.datadog.android.rum.tracking.ViewTrackingStrategy
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Request

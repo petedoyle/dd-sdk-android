@@ -11,11 +11,11 @@ import android.os.Handler
 import android.os.Looper
 import androidx.annotation.FloatRange
 import androidx.fragment.app.Fragment
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.rum.internal.RumFeature
-import com.datadog.android.rum.internal.monitor.DatadogRumMonitor
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.rum.internal.RumFeature
+import co.fast.android.internal.datadog.android.rum.internal.monitor.DatadogRumMonitor
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 /**
  *  A class enabling Datadog RUM features.

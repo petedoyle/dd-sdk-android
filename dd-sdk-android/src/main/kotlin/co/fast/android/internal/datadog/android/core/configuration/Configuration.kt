@@ -9,38 +9,38 @@ package co.fast.android.internal.datadog.android.core.configuration
 import android.os.Build
 import android.os.Looper
 import co.fast.android.internal.datadog.android.Datadog
-import com.datadog.android.DatadogEndpoint
-import com.datadog.android.DatadogInterceptor
-import com.datadog.android.DatadogSite
-import com.datadog.android.core.internal.event.NoOpEventMapper
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.core.internal.utils.warnDeprecated
-import com.datadog.android.event.EventMapper
-import com.datadog.android.event.NoOpSpanEventMapper
-import com.datadog.android.event.SpanEventMapper
-import com.datadog.android.event.ViewEventMapper
-import com.datadog.android.log.model.LogEvent
-import com.datadog.android.plugin.DatadogPlugin
-import com.datadog.android.plugin.Feature as PluginFeature
-import com.datadog.android.rum.RumMonitor
-import com.datadog.android.rum.internal.domain.event.RumEventMapper
-import com.datadog.android.rum.internal.instrumentation.MainLooperLongTaskStrategy
-import com.datadog.android.rum.internal.instrumentation.UserActionTrackingStrategyApi29
-import com.datadog.android.rum.internal.instrumentation.UserActionTrackingStrategyLegacy
-import com.datadog.android.rum.internal.instrumentation.gestures.DatadogGesturesTracker
-import com.datadog.android.rum.internal.tracking.JetpackViewAttributesProvider
-import com.datadog.android.rum.internal.tracking.UserActionTrackingStrategy
-import com.datadog.android.rum.model.ActionEvent
-import com.datadog.android.rum.model.ErrorEvent
-import com.datadog.android.rum.model.LongTaskEvent
-import com.datadog.android.rum.model.ResourceEvent
-import com.datadog.android.rum.model.ViewEvent
-import com.datadog.android.rum.tracking.ActivityViewTrackingStrategy
-import com.datadog.android.rum.tracking.InteractionPredicate
-import com.datadog.android.rum.tracking.NoOpInteractionPredicate
-import com.datadog.android.rum.tracking.TrackingStrategy
-import com.datadog.android.rum.tracking.ViewAttributesProvider
-import com.datadog.android.rum.tracking.ViewTrackingStrategy
+import co.fast.android.internal.datadog.android.DatadogEndpoint
+import co.fast.android.internal.datadog.android.DatadogInterceptor
+import co.fast.android.internal.datadog.android.DatadogSite
+import co.fast.android.internal.datadog.android.core.internal.event.NoOpEventMapper
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.core.internal.utils.warnDeprecated
+import co.fast.android.internal.datadog.android.event.EventMapper
+import co.fast.android.internal.datadog.android.event.NoOpSpanEventMapper
+import co.fast.android.internal.datadog.android.event.SpanEventMapper
+import co.fast.android.internal.datadog.android.event.ViewEventMapper
+import co.fast.android.internal.datadog.android.log.model.LogEvent
+import co.fast.android.internal.datadog.android.plugin.DatadogPlugin
+import co.fast.android.internal.datadog.android.plugin.Feature as PluginFeature
+import co.fast.android.internal.datadog.android.rum.RumMonitor
+import co.fast.android.internal.datadog.android.rum.internal.domain.event.RumEventMapper
+import co.fast.android.internal.datadog.android.rum.internal.instrumentation.MainLooperLongTaskStrategy
+import co.fast.android.internal.datadog.android.rum.internal.instrumentation.UserActionTrackingStrategyApi29
+import co.fast.android.internal.datadog.android.rum.internal.instrumentation.UserActionTrackingStrategyLegacy
+import co.fast.android.internal.datadog.android.rum.internal.instrumentation.gestures.DatadogGesturesTracker
+import co.fast.android.internal.datadog.android.rum.internal.tracking.JetpackViewAttributesProvider
+import co.fast.android.internal.datadog.android.rum.internal.tracking.UserActionTrackingStrategy
+import co.fast.android.internal.datadog.android.rum.model.ActionEvent
+import co.fast.android.internal.datadog.android.rum.model.ErrorEvent
+import co.fast.android.internal.datadog.android.rum.model.LongTaskEvent
+import co.fast.android.internal.datadog.android.rum.model.ResourceEvent
+import co.fast.android.internal.datadog.android.rum.model.ViewEvent
+import co.fast.android.internal.datadog.android.rum.tracking.ActivityViewTrackingStrategy
+import co.fast.android.internal.datadog.android.rum.tracking.InteractionPredicate
+import co.fast.android.internal.datadog.android.rum.tracking.NoOpInteractionPredicate
+import co.fast.android.internal.datadog.android.rum.tracking.TrackingStrategy
+import co.fast.android.internal.datadog.android.rum.tracking.ViewAttributesProvider
+import co.fast.android.internal.datadog.android.rum.tracking.ViewTrackingStrategy
 import java.net.MalformedURLException
 import java.net.Proxy
 import java.net.URL
@@ -186,7 +186,7 @@ internal constructor(
             "Use the `useSite()` method instead.",
             ReplaceWith(
                 "useSite(DatadogSite.EU1)",
-                "com.datadog.android.DatadogSite"
+                "co.fast.android.internal.datadog.android.DatadogSite"
             )
         )
         @Suppress("DEPRECATION", "StringLiteralDuplication")
@@ -215,7 +215,7 @@ internal constructor(
             "Use the `useSite()` method instead.",
             ReplaceWith(
                 "useSite(DatadogSite.US1)",
-                "com.datadog.android.DatadogSite"
+                "co.fast.android.internal.datadog.android.DatadogSite"
             )
         )
         @Suppress("DEPRECATION", "StringLiteralDuplication")
@@ -244,7 +244,7 @@ internal constructor(
             "Use the `useSite()` method instead.",
             ReplaceWith(
                 "useSite(DatadogSite.US1_FED)",
-                "com.datadog.android.DatadogSite"
+                "co.fast.android.internal.datadog.android.DatadogSite"
             )
         )
         @Suppress("DEPRECATION", "StringLiteralDuplication")
@@ -357,10 +357,10 @@ internal constructor(
          * This means that you should call [RumMonitor.startView] and [RumMonitor.stopView]
          * yourself. A view should be started when it becomes visible and interactive
          * (equivalent to `onResume`) and be stopped when it's paused (equivalent to `onPause`).
-         * @see [com.datadog.android.rum.tracking.ActivityViewTrackingStrategy]
-         * @see [com.datadog.android.rum.tracking.FragmentViewTrackingStrategy]
-         * @see [com.datadog.android.rum.tracking.MixedViewTrackingStrategy]
-         * @see [com.datadog.android.rum.tracking.NavigationViewTrackingStrategy]
+         * @see [co.fast.android.internal.datadog.android.rum.tracking.ActivityViewTrackingStrategy]
+         * @see [co.fast.android.internal.datadog.android.rum.tracking.FragmentViewTrackingStrategy]
+         * @see [co.fast.android.internal.datadog.android.rum.tracking.MixedViewTrackingStrategy]
+         * @see [co.fast.android.internal.datadog.android.rum.tracking.NavigationViewTrackingStrategy]
          */
         fun useViewTrackingStrategy(strategy: ViewTrackingStrategy): Builder {
             applyIfFeatureEnabled(PluginFeature.RUM, "useViewTrackingStrategy") {
@@ -521,9 +521,9 @@ internal constructor(
         }
 
         /**
-         * Sets the [SpanEventMapper] for the Trace [com.datadog.android.tracing.model.SpanEvent].
+         * Sets the [SpanEventMapper] for the Trace [co.fast.android.internal.datadog.android.tracing.model.SpanEvent].
          * You can use this interface implementation to modify the
-         * [com.datadog.android.tracing.model.SpanEvent] attributes before serialisation.
+         * [co.fast.android.internal.datadog.android.tracing.model.SpanEvent] attributes before serialisation.
          *
          * @param eventMapper the [SpanEventMapper] implementation.
          */

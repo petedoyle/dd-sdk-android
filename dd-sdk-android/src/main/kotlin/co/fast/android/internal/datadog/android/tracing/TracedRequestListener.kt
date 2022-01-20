@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.tracing
 
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 import io.opentracing.Span
 import okhttp3.Request
 import okhttp3.Response

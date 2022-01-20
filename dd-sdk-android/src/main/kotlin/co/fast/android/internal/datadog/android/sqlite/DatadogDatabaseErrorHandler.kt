@@ -9,9 +9,9 @@ package co.fast.android.internal.datadog.android.sqlite
 import android.database.DatabaseErrorHandler
 import android.database.DefaultDatabaseErrorHandler
 import android.database.sqlite.SQLiteDatabase
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.RumAttributes
-import com.datadog.android.rum.RumErrorSource
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.RumAttributes
+import co.fast.android.internal.datadog.android.rum.RumErrorSource
 import java.util.Locale
 
 /**

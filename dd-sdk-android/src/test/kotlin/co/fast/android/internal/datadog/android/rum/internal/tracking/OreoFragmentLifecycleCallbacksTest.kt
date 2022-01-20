@@ -22,8 +22,8 @@ import co.fast.android.internal.datadog.android.rum.internal.instrumentation.ges
 import co.fast.android.internal.datadog.android.rum.internal.monitor.AdvancedRumMonitor
 import co.fast.android.internal.datadog.android.rum.model.ViewEvent
 import co.fast.android.internal.datadog.android.rum.tracking.ComponentPredicate
-import com.datadog.tools.unit.annotations.TestTargetApi
-import com.datadog.tools.unit.extensions.ApiLevelExtension
+import co.fast.android.internal.datadog.tools.unit.annotations.TestTargetApi
+import co.fast.android.internal.datadog.tools.unit.extensions.ApiLevelExtension
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.inOrder
 import com.nhaarman.mockitokotlin2.mock

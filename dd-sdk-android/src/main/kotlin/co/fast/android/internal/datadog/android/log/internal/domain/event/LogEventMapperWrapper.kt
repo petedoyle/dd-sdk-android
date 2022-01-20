@@ -6,9 +6,9 @@
 
 package co.fast.android.internal.datadog.android.log.internal.domain.event
 
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.event.EventMapper
-import com.datadog.android.log.model.LogEvent
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.event.EventMapper
+import co.fast.android.internal.datadog.android.log.model.LogEvent
 import java.util.Locale
 
 internal class LogEventMapperWrapper(private val wrappedEventMapper: EventMapper<LogEvent>) :

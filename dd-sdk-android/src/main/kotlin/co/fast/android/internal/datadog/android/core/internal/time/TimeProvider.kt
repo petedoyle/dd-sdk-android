@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.core.internal.time
 
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 @NoOpImplementation
 internal interface TimeProvider {

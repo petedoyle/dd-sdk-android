@@ -8,12 +8,12 @@ package co.fast.android.internal.datadog.android.rum.tracking
 
 import android.app.Activity
 import android.os.Bundle
-import com.datadog.android.core.internal.utils.resolveViewName
-import com.datadog.android.core.internal.utils.runIfValid
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.internal.monitor.AdvancedRumMonitor
-import com.datadog.android.rum.internal.tracking.ViewLoadingTimer
-import com.datadog.android.rum.model.ViewEvent
+import co.fast.android.internal.datadog.android.core.internal.utils.resolveViewName
+import co.fast.android.internal.datadog.android.core.internal.utils.runIfValid
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.internal.monitor.AdvancedRumMonitor
+import co.fast.android.internal.datadog.android.rum.internal.tracking.ViewLoadingTimer
+import co.fast.android.internal.datadog.android.rum.model.ViewEvent
 
 /**
  * A [ViewTrackingStrategy] that will track [Activity] as RUM Views.

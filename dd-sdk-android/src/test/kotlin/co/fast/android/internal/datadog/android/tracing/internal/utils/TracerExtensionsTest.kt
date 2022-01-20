@@ -10,7 +10,7 @@ import co.fast.android.internal.datadog.android.tracing.AndroidTracer
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
 import co.fast.android.internal.datadog.opentracing.DDSpan
 import co.fast.android.internal.datadog.opentracing.scopemanager.ContextualScopeManager
-import com.datadog.tools.unit.getStaticValue
+import co.fast.android.internal.datadog.tools.unit.getStaticValue
 import fr.xgouchet.elmyr.Forge
 import fr.xgouchet.elmyr.junit5.ForgeConfiguration
 import fr.xgouchet.elmyr.junit5.ForgeExtension

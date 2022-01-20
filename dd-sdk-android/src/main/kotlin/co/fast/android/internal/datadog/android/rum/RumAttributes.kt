@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.rum
 
-import com.datadog.android.DatadogInterceptor
-import com.datadog.android.core.configuration.Credentials
+import co.fast.android.internal.datadog.android.DatadogInterceptor
+import co.fast.android.internal.datadog.android.core.configuration.Credentials
 
 /**
  * This class holds constant rum attribute keys.

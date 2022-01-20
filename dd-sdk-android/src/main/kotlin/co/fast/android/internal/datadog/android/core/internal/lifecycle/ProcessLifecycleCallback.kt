@@ -7,10 +7,10 @@
 package co.fast.android.internal.datadog.android.core.internal.lifecycle
 
 import android.content.Context
-import com.datadog.android.core.internal.net.info.NetworkInfoProvider
-import com.datadog.android.core.internal.utils.cancelUploadWorker
-import com.datadog.android.core.internal.utils.triggerUploadWorker
-import com.datadog.android.core.model.NetworkInfo
+import co.fast.android.internal.datadog.android.core.internal.net.info.NetworkInfoProvider
+import co.fast.android.internal.datadog.android.core.internal.utils.cancelUploadWorker
+import co.fast.android.internal.datadog.android.core.internal.utils.triggerUploadWorker
+import co.fast.android.internal.datadog.android.core.model.NetworkInfo
 import java.lang.ref.WeakReference
 
 internal class ProcessLifecycleCallback(

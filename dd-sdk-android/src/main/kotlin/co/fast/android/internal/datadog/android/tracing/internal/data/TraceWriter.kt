@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.tracing.internal.data
 
-import com.datadog.android.core.internal.persistence.DataWriter
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataWriter
 import co.fast.android.internal.datadog.opentracing.DDSpan
 import co.fast.android.internal.datadog.trace.common.writer.Writer
 

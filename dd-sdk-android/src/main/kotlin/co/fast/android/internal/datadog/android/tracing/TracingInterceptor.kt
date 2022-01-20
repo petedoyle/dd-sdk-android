@@ -6,12 +6,12 @@
 
 package co.fast.android.internal.datadog.android.tracing
 
-import com.datadog.android.DatadogInterceptor
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.net.FirstPartyHostDetector
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.core.internal.utils.loggableStackTrace
-import com.datadog.android.tracing.internal.TracesFeature
+import co.fast.android.internal.datadog.android.DatadogInterceptor
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.net.FirstPartyHostDetector
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.core.internal.utils.loggableStackTrace
+import co.fast.android.internal.datadog.android.tracing.internal.TracesFeature
 import co.fast.android.internal.datadog.opentracing.DDSpan
 import co.fast.android.internal.datadog.opentracing.DDTracer
 import co.fast.android.internal.datadog.trace.api.DDTags

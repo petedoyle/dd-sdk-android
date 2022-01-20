@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.advanced
 
-import com.datadog.android.core.internal.persistence.DataWriter
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataWriter
+import co.fast.android.internal.datadog.android.log.Logger
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.RejectedExecutionException
 

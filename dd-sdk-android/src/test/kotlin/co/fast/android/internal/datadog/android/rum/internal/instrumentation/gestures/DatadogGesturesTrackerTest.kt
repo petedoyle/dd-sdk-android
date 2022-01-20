@@ -12,7 +12,7 @@ import android.view.Window
 import co.fast.android.internal.datadog.android.rum.tracking.InteractionPredicate
 import co.fast.android.internal.datadog.android.rum.tracking.NoOpInteractionPredicate
 import co.fast.android.internal.datadog.android.rum.tracking.ViewAttributesProvider
-import com.datadog.tools.unit.ObjectTest
+import co.fast.android.internal.datadog.tools.unit.ObjectTest
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.argumentCaptor
 import com.nhaarman.mockitokotlin2.doReturn

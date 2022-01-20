@@ -16,10 +16,10 @@ import android.webkit.WebResourceResponse
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.annotation.RequiresApi
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.RumAttributes
-import com.datadog.android.rum.RumErrorSource
-import com.datadog.android.rum.RumResourceKind
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.RumAttributes
+import co.fast.android.internal.datadog.android.rum.RumErrorSource
+import co.fast.android.internal.datadog.android.rum.RumResourceKind
 
 /**
  * A [WebViewClient] propagating all relevant events to the [GlobalRum] monitor.

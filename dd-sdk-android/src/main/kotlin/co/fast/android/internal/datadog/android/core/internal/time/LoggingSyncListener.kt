@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.core.internal.time
 
-import com.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
 import com.lyft.kronos.SyncListener
 
 internal class LoggingSyncListener : SyncListener {

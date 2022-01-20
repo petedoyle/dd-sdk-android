@@ -6,15 +6,15 @@
 
 package co.fast.android.internal.datadog.android.tracing
 
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.log.LogAttributes
-import com.datadog.android.log.Logger
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.internal.RumFeature
-import com.datadog.android.tracing.internal.TracesFeature
-import com.datadog.android.tracing.internal.data.TraceWriter
-import com.datadog.android.tracing.internal.handlers.AndroidSpanLogsHandler
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.log.LogAttributes
+import co.fast.android.internal.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.internal.RumFeature
+import co.fast.android.internal.datadog.android.tracing.internal.TracesFeature
+import co.fast.android.internal.datadog.android.tracing.internal.data.TraceWriter
+import co.fast.android.internal.datadog.android.tracing.internal.handlers.AndroidSpanLogsHandler
 import co.fast.android.internal.datadog.opentracing.DDTracer
 import co.fast.android.internal.datadog.opentracing.LogHandler
 import co.fast.android.internal.datadog.trace.api.Config

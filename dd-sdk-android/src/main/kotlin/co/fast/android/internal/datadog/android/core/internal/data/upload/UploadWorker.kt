@@ -10,16 +10,16 @@ import android.content.Context
 import androidx.work.Worker
 import androidx.work.WorkerParameters
 import co.fast.android.internal.datadog.android.Datadog
-import com.datadog.android.core.internal.net.DataUploader
-import com.datadog.android.core.internal.net.UploadStatus
-import com.datadog.android.core.internal.persistence.Batch
-import com.datadog.android.core.internal.persistence.DataReader
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.core.internal.utils.sdkLogger
-import com.datadog.android.error.internal.CrashReportsFeature
-import com.datadog.android.log.internal.LogsFeature
-import com.datadog.android.rum.internal.RumFeature
-import com.datadog.android.tracing.internal.TracesFeature
+import co.fast.android.internal.datadog.android.core.internal.net.DataUploader
+import co.fast.android.internal.datadog.android.core.internal.net.UploadStatus
+import co.fast.android.internal.datadog.android.core.internal.persistence.Batch
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataReader
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.error.internal.CrashReportsFeature
+import co.fast.android.internal.datadog.android.log.internal.LogsFeature
+import co.fast.android.internal.datadog.android.rum.internal.RumFeature
+import co.fast.android.internal.datadog.android.tracing.internal.TracesFeature
 
 internal class UploadWorker(
     appContext: Context,

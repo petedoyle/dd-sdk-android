@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.event
 
-import com.datadog.android.rum.model.ViewEvent
+import co.fast.android.internal.datadog.android.rum.model.ViewEvent
 
 /**
  * An interface which can be implemented to modify the writable attributes inside ViewEvent.

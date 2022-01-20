@@ -18,9 +18,9 @@ import co.fast.android.internal.datadog.android.log.internal.domain.event.LogEve
 import co.fast.android.internal.datadog.android.log.internal.net.LogsOkHttpUploaderV2
 import co.fast.android.internal.datadog.android.log.model.LogEvent
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.extensions.ApiLevelExtension
-import com.datadog.tools.unit.extensions.TestConfigurationExtension
-import com.datadog.tools.unit.getFieldValue
+import co.fast.android.internal.datadog.tools.unit.extensions.ApiLevelExtension
+import co.fast.android.internal.datadog.tools.unit.extensions.TestConfigurationExtension
+import co.fast.android.internal.datadog.tools.unit.getFieldValue
 import fr.xgouchet.elmyr.Forge
 import fr.xgouchet.elmyr.junit5.ForgeConfiguration
 import fr.xgouchet.elmyr.junit5.ForgeExtension

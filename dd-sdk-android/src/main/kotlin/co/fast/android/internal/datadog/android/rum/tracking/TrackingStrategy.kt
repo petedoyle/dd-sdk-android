@@ -7,7 +7,7 @@
 package co.fast.android.internal.datadog.android.rum.tracking
 
 import android.content.Context
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 /**
  * The TrackingStrategy interface.

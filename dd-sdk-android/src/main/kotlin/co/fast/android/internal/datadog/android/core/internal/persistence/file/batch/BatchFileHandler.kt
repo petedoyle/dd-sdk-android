@@ -6,11 +6,11 @@
 
 package co.fast.android.internal.datadog.android.core.internal.persistence.file.batch
 
-import com.datadog.android.core.internal.persistence.file.FileHandler
-import com.datadog.android.core.internal.persistence.file.mkdirsSafe
-import com.datadog.android.core.internal.persistence.file.renameToSafe
-import com.datadog.android.core.internal.utils.use
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.FileHandler
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.mkdirsSafe
+import co.fast.android.internal.datadog.android.core.internal.persistence.file.renameToSafe
+import co.fast.android.internal.datadog.android.core.internal.utils.use
+import co.fast.android.internal.datadog.android.log.Logger
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException

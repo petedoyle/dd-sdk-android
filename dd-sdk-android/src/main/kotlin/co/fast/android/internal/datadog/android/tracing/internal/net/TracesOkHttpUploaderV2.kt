@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.tracing.internal.net
 
-import com.datadog.android.core.internal.net.DataOkHttpUploaderV2
-import com.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.core.internal.net.DataOkHttpUploaderV2
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
 import okhttp3.Call
 
 internal open class TracesOkHttpUploaderV2(

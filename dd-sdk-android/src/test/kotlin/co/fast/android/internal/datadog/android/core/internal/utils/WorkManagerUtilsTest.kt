@@ -19,11 +19,11 @@ import co.fast.android.internal.datadog.android.utils.config.ApplicationContextT
 import co.fast.android.internal.datadog.android.utils.config.MainLooperTestConfiguration
 import co.fast.android.internal.datadog.android.utils.extension.mockChoreographerInstance
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.annotations.TestConfigurationsProvider
-import com.datadog.tools.unit.extensions.TestConfigurationExtension
-import com.datadog.tools.unit.extensions.config.TestConfiguration
-import com.datadog.tools.unit.invokeMethod
-import com.datadog.tools.unit.setStaticValue
+import co.fast.android.internal.datadog.tools.unit.annotations.TestConfigurationsProvider
+import co.fast.android.internal.datadog.tools.unit.extensions.TestConfigurationExtension
+import co.fast.android.internal.datadog.tools.unit.extensions.config.TestConfiguration
+import co.fast.android.internal.datadog.tools.unit.invokeMethod
+import co.fast.android.internal.datadog.tools.unit.setStaticValue
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.argThat
 import com.nhaarman.mockitokotlin2.doReturn

@@ -16,7 +16,7 @@ import co.fast.android.internal.datadog.android.rum.RumActionType
 import co.fast.android.internal.datadog.android.rum.RumAttributes
 import co.fast.android.internal.datadog.android.rum.tracking.InteractionPredicate
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
-import com.datadog.tools.unit.extensions.TestConfigurationExtension
+import co.fast.android.internal.datadog.tools.unit.extensions.TestConfigurationExtension
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.argumentCaptor
 import com.nhaarman.mockitokotlin2.eq

@@ -6,10 +6,10 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.net
 
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.net.DataOkHttpUploaderV2
-import com.datadog.android.core.internal.utils.sdkLogger
-import com.datadog.android.rum.RumAttributes
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.net.DataOkHttpUploaderV2
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.rum.RumAttributes
 import okhttp3.Call
 
 internal open class RumOkHttpUploaderV2(

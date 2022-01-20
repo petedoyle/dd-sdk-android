@@ -6,8 +6,8 @@
 
 package co.fast.android.internal.datadog.android.log.internal.net
 
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.net.DataOkHttpUploader
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.net.DataOkHttpUploader
 import java.util.Locale
 import okhttp3.Call
 

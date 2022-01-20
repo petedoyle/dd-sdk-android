@@ -6,15 +6,15 @@
 
 package co.fast.android.internal.datadog.android.core.internal.data.upload
 
-import com.datadog.android.core.configuration.UploadFrequency
-import com.datadog.android.core.internal.net.DataUploader
-import com.datadog.android.core.internal.net.UploadStatus
-import com.datadog.android.core.internal.net.info.NetworkInfoProvider
-import com.datadog.android.core.internal.persistence.Batch
-import com.datadog.android.core.internal.persistence.DataReader
-import com.datadog.android.core.internal.system.SystemInfo
-import com.datadog.android.core.internal.system.SystemInfoProvider
-import com.datadog.android.core.model.NetworkInfo
+import co.fast.android.internal.datadog.android.core.configuration.UploadFrequency
+import co.fast.android.internal.datadog.android.core.internal.net.DataUploader
+import co.fast.android.internal.datadog.android.core.internal.net.UploadStatus
+import co.fast.android.internal.datadog.android.core.internal.net.info.NetworkInfoProvider
+import co.fast.android.internal.datadog.android.core.internal.persistence.Batch
+import co.fast.android.internal.datadog.android.core.internal.persistence.DataReader
+import co.fast.android.internal.datadog.android.core.internal.system.SystemInfo
+import co.fast.android.internal.datadog.android.core.internal.system.SystemInfoProvider
+import co.fast.android.internal.datadog.android.core.model.NetworkInfo
 import java.util.concurrent.ScheduledThreadPoolExecutor
 import java.util.concurrent.TimeUnit
 import kotlin.math.max

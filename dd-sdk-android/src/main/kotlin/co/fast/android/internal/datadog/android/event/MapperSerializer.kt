@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.event
 
-import com.datadog.android.core.internal.persistence.Serializer
+import co.fast.android.internal.datadog.android.core.internal.persistence.Serializer
 
 internal class MapperSerializer<T : Any>(
     private val eventMapper: EventMapper<T>,

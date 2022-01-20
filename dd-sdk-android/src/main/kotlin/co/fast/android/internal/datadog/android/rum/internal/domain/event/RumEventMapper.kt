@@ -6,18 +6,18 @@
 
 package co.fast.android.internal.datadog.android.rum.internal.domain.event
 
-import com.datadog.android.core.internal.event.NoOpEventMapper
-import com.datadog.android.core.internal.utils.devLogger
-import com.datadog.android.core.internal.utils.sdkLogger
-import com.datadog.android.event.EventMapper
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.internal.monitor.AdvancedRumMonitor
-import com.datadog.android.rum.internal.monitor.EventType
-import com.datadog.android.rum.model.ActionEvent
-import com.datadog.android.rum.model.ErrorEvent
-import com.datadog.android.rum.model.LongTaskEvent
-import com.datadog.android.rum.model.ResourceEvent
-import com.datadog.android.rum.model.ViewEvent
+import co.fast.android.internal.datadog.android.core.internal.event.NoOpEventMapper
+import co.fast.android.internal.datadog.android.core.internal.utils.devLogger
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.event.EventMapper
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.internal.monitor.AdvancedRumMonitor
+import co.fast.android.internal.datadog.android.rum.internal.monitor.EventType
+import co.fast.android.internal.datadog.android.rum.model.ActionEvent
+import co.fast.android.internal.datadog.android.rum.model.ErrorEvent
+import co.fast.android.internal.datadog.android.rum.model.LongTaskEvent
+import co.fast.android.internal.datadog.android.rum.model.ResourceEvent
+import co.fast.android.internal.datadog.android.rum.model.ViewEvent
 import java.util.Locale
 
 internal data class RumEventMapper(

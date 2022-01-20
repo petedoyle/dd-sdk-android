@@ -25,8 +25,8 @@ import co.fast.android.internal.datadog.android.rum.internal.vitals.VitalMonitor
 import co.fast.android.internal.datadog.android.rum.model.ViewEvent
 import co.fast.android.internal.datadog.android.utils.forge.Configurator
 import co.fast.android.internal.datadog.android.utils.forge.exhaustiveAttributes
-import com.datadog.tools.unit.extensions.ApiLevelExtension
-import com.datadog.tools.unit.setFieldValue
+import co.fast.android.internal.datadog.tools.unit.extensions.ApiLevelExtension
+import co.fast.android.internal.datadog.tools.unit.setFieldValue
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.argThat
 import com.nhaarman.mockitokotlin2.argumentCaptor

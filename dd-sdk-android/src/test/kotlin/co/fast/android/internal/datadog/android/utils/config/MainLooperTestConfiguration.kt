@@ -7,9 +7,9 @@
 package co.fast.android.internal.datadog.android.utils.config
 
 import android.os.Looper
-import com.datadog.tools.unit.extensions.config.TestConfiguration
-import com.datadog.tools.unit.getStaticValue
-import com.datadog.tools.unit.setStaticValue
+import co.fast.android.internal.datadog.tools.unit.extensions.config.TestConfiguration
+import co.fast.android.internal.datadog.tools.unit.getStaticValue
+import co.fast.android.internal.datadog.tools.unit.setStaticValue
 import fr.xgouchet.elmyr.Forge
 
 class MainLooperTestConfiguration : TestConfiguration {

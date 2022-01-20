@@ -7,8 +7,8 @@
 package co.fast.android.internal.datadog.android.core.internal.net.info
 
 import android.content.Context
-import com.datadog.android.core.model.NetworkInfo
-import com.datadog.tools.annotation.NoOpImplementation
+import co.fast.android.internal.datadog.android.core.model.NetworkInfo
+import co.fast.android.internal.datadog.tools.annotation.NoOpImplementation
 
 @NoOpImplementation
 internal interface NetworkInfoProvider {

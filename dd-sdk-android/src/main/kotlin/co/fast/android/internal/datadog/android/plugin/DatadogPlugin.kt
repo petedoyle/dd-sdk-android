@@ -6,7 +6,7 @@
 
 package co.fast.android.internal.datadog.android.plugin
 
-import com.datadog.android.privacy.TrackingConsentProviderCallback
+import co.fast.android.internal.datadog.android.privacy.TrackingConsentProviderCallback
 
 /**
  * DatadogPlugin interface. You can attach as many as you want for any existing feature in the

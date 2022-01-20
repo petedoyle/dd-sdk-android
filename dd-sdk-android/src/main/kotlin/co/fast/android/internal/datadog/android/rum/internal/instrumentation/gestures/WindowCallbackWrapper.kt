@@ -10,12 +10,12 @@ import android.view.KeyEvent
 import android.view.MenuItem
 import android.view.MotionEvent
 import android.view.Window
-import com.datadog.android.core.internal.utils.sdkLogger
-import com.datadog.android.rum.GlobalRum
-import com.datadog.android.rum.RumActionType
-import com.datadog.android.rum.RumAttributes
-import com.datadog.android.rum.tracking.InteractionPredicate
-import com.datadog.android.rum.tracking.NoOpInteractionPredicate
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.rum.GlobalRum
+import co.fast.android.internal.datadog.android.rum.RumActionType
+import co.fast.android.internal.datadog.android.rum.RumAttributes
+import co.fast.android.internal.datadog.android.rum.tracking.InteractionPredicate
+import co.fast.android.internal.datadog.android.rum.tracking.NoOpInteractionPredicate
 import kotlin.Exception
 
 @Suppress("TooGenericExceptionCaught")

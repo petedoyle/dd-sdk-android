@@ -7,9 +7,9 @@
 package co.fast.android.internal.datadog.android.core.internal.net
 
 import android.os.Build
-import com.datadog.android.BuildConfig
-import com.datadog.android.core.internal.CoreFeature
-import com.datadog.android.core.internal.utils.sdkLogger
+import co.fast.android.internal.datadog.android.BuildConfig
+import co.fast.android.internal.datadog.android.core.internal.CoreFeature
+import co.fast.android.internal.datadog.android.core.internal.utils.sdkLogger
 import okhttp3.Call
 import okhttp3.Request
 import okhttp3.RequestBody

@@ -9,7 +9,7 @@ package co.fast.android.internal.datadog.android.log.internal.logger
 import android.os.Build
 import android.util.Log
 import co.fast.android.internal.datadog.android.Datadog
-import com.datadog.android.log.Logger
+import co.fast.android.internal.datadog.android.log.Logger
 
 internal class LogcatLogHandler(
     internal val serviceName: String,
@@ -106,7 +106,7 @@ internal class LogcatLogHandler(
 
         // internal for testing
         internal val IGNORED_PACKAGE_PREFIXES = arrayOf(
-            "com.datadog.android.timber",
+            "co.fast.android.internal.datadog.android.timber",
             "timber.log"
         )
     }
