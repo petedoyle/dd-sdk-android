@@ -8,7 +8,7 @@ import com.datadog.gradle.config.nightlyTestsCoverageConfig
 
 plugins {
     `maven-publish`
-    id("io.github.gradle-nexus.publish-plugin")
+//    id("io.github.gradle-nexus.publish-plugin")
 }
 
 buildscript {
@@ -38,17 +38,17 @@ allprojects {
     }
 }
 
-nexusPublishing {
-    repositories {
-        sonatype {
-            val sonatypeUsername = System.getenv("OSSRH_USERNAME")
-            val sonatypePassword = System.getenv("OSSRH_PASSWORD")
-            stagingProfileId.set("378eecbbe2cf9")
-            if (sonatypeUsername != null) username.set(sonatypeUsername)
-            if (sonatypePassword != null) password.set(sonatypePassword)
-        }
-    }
-}
+//nexusPublishing {
+//    repositories {
+//        sonatype {
+//            val sonatypeUsername = System.getenv("OSSRH_USERNAME")
+//            val sonatypePassword = System.getenv("OSSRH_PASSWORD")
+//            stagingProfileId.set("378eecbbe2cf9")
+//            if (sonatypeUsername != null) username.set(sonatypeUsername)
+//            if (sonatypePassword != null) password.set(sonatypePassword)
+//        }
+//    }
+//}
 
 task<Delete>("clean") {
     delete(rootProject.buildDir)

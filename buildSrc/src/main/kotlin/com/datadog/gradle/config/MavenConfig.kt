@@ -14,8 +14,9 @@ import org.gradle.kotlin.dsl.findByType
 import org.gradle.plugins.signing.SigningExtension
 
 object MavenConfig {
-    const val GROUP_ID = "com.datadoghq"
+    const val GROUP_ID = "co.fast.android.sdk"
     const val PUBLICATION = "release"
+    const val ARTIFACT_ID = "sdk-internal-datadog"
 }
 
 @Suppress("UnstableApiUsage")
@@ -47,13 +48,19 @@ fun Project.publishingConfig(projectDescription: String) {
 
         publishingExtension.apply {
 
+            publications {
+                repositories {
+                    mavenLocal()
+                }
+            }
+
             publications.create(MavenConfig.PUBLICATION, MavenPublication::class.java) {
                 from(components.getByName("release"))
                 artifact(tasks.findByName("generateSourcesJar"))
                 artifact(tasks.findByName("generateJavadocJar"))
 
                 groupId = MavenConfig.GROUP_ID
-                artifactId = projectName
+                artifactId = MavenConfig.ARTIFACT_ID
                 version = AndroidConfig.VERSION.name
 
                 pom {
@@ -90,11 +97,11 @@ fun Project.publishingConfig(projectDescription: String) {
         }
 
         signingExtension.apply {
-            val privateKey = System.getenv("GPG_PRIVATE_KEY")
-            val password = System.getenv("GPG_PASSWORD")
-            isRequired = !hasProperty("dd-skip-signing")
-            useInMemoryPgpKeys(privateKey, password)
-            sign(publishingExtension.publications.getByName(MavenConfig.PUBLICATION))
+//            val privateKey = System.getenv("GPG_PRIVATE_KEY")
+//            val password = System.getenv("GPG_PASSWORD")
+//            isRequired = !hasProperty("dd-skip-signing")
+//            useInMemoryPgpKeys(privateKey, password)
+//            sign(publishingExtension.publications.getByName(MavenConfig.PUBLICATION))
         }
     }
 }
