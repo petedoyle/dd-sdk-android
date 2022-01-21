@@ -49,7 +49,7 @@ class RuntimeUtilsTest {
 
     @AfterEach
     fun `tear down`() {
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setFieldValue("isDebug", false)
+        Datadog.setFieldValue("isDebug", false)
         InternalLogsFeature.stop()
 
         devLogger.setFieldValue("handler", buildDevLogHandler())
@@ -135,7 +135,7 @@ class RuntimeUtilsTest {
         @IntForgery(min = Log.VERBOSE, max = (Log.ASSERT + 1)) level: Int
     ) {
         // Given
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setVerbosity(level)
+        Datadog.setVerbosity(level)
 
         // When
         val handler = buildDevLogHandler()

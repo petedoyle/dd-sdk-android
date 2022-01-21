@@ -137,7 +137,7 @@ internal class DatadogExceptionHandlerTest {
         whenever(mockNetworkInfoProvider.getLatestNetworkInfo()) doReturn fakeNetworkInfo
         whenever(mockUserInfoProvider.getUserInfo()) doReturn fakeUserInfo
 
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(
+        Datadog.initialize(
             appContext.mockInstance,
             Credentials(fakeToken, fakeEnvName, Credentials.NO_VARIANT, null),
             Configuration.Builder(
@@ -172,7 +172,7 @@ internal class DatadogExceptionHandlerTest {
     fun `tear down`() {
         Thread.setDefaultUncaughtExceptionHandler(originalHandler)
         WorkManagerImpl::class.java.setStaticValue("sDefaultInstance", null)
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
+        Datadog.invokeMethod("stop")
         GlobalTracer::class.java.setStaticValue("isRegistered", false)
     }
 
@@ -459,7 +459,7 @@ internal class DatadogExceptionHandlerTest {
                     )
                 )
         }
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
+        Datadog.invokeMethod("stop")
     }
 
     @Test

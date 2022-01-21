@@ -68,7 +68,7 @@ internal class LogcatLogHandler(
     }
 
     internal fun getCallerStackElement(): StackTraceElement? {
-        return if (_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isDebug && useClassnameAsTag) {
+        return if (Datadog.isDebug && useClassnameAsTag) {
             val stackTrace = Throwable().stackTrace
             return findValidCallStackElement(stackTrace)
         } else {

@@ -113,7 +113,7 @@ internal class UploadWorkerTest {
         // Prevent crash when initializing RumFeature
         mockChoreographerInstance()
 
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(
+        Datadog.initialize(
             appContext.mockInstance,
             Credentials("CLIENT_TOKEN", "ENVIRONMENT", Credentials.NO_VARIANT, null),
             Configuration.Builder(
@@ -142,7 +142,7 @@ internal class UploadWorkerTest {
 
     @AfterEach
     fun `tear down`() {
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
+        Datadog.invokeMethod("stop")
     }
 
     @Test

@@ -336,7 +336,7 @@ internal constructor(internal val handler: LogHandler) {
             return if (LogsFeature.isInitialized()) {
                 LogsFeature.persistenceStrategy.getWriter()
             } else {
-                devLogger.e(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.MESSAGE_NOT_INITIALIZED)
+                devLogger.e(Datadog.MESSAGE_NOT_INITIALIZED)
                 null
             }
         }

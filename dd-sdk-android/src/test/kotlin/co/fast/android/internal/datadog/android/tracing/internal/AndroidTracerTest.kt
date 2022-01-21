@@ -99,7 +99,7 @@ internal class AndroidTracerTest {
 
     @AfterEach
     fun `tear down`() {
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
+        Datadog.invokeMethod("stop")
 
         val tracer = GlobalTracer.get()
         val activeSpan = tracer?.activeSpan()

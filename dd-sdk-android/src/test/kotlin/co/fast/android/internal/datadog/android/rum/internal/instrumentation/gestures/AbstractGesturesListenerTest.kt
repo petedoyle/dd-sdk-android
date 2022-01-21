@@ -64,14 +64,14 @@ internal abstract class AbstractGesturesListenerTest {
 
     @BeforeEach
     open fun `set up`() {
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setVerbosity(Log.VERBOSE)
+        Datadog.setVerbosity(Log.VERBOSE)
         whenever(mockAppContext.resources).thenReturn(mockResources)
         CoreFeature.contextRef = WeakReference(mockAppContext)
     }
 
     @AfterEach
     fun `tear down`() {
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setVerbosity(Integer.MAX_VALUE)
+        Datadog.setVerbosity(Integer.MAX_VALUE)
         CoreFeature.contextRef = WeakReference(null)
     }
 

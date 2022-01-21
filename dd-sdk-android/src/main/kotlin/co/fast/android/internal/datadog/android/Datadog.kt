@@ -62,72 +62,42 @@ object Datadog {
         configuration: Configuration,
         trackingConsent: TrackingConsent
     ) {
-        if (_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialized.get()) {
-            devLogger.w(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.MESSAGE_ALREADY_INITIALIZED)
+        if (initialized.get()) {
+            devLogger.w(MESSAGE_ALREADY_INITIALIZED)
             return
         }
 
         val appContext = context.applicationContext
         // the logic in this function depends on this value so always resolve isDebug first
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isDebug =
-            _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.resolveIsDebug(
-                context
-            )
+        isDebug = resolveIsDebug(context)
 
-        if (!_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.validateEnvironmentName(
-                credentials.envName
-            )
-        ) {
+        if (!validateEnvironmentName(credentials.envName)) {
             return
         }
 
         // always initialize Core Features first
         CoreFeature.initialize(appContext, credentials, configuration.coreConfig, trackingConsent)
 
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.applyAdditionalConfiguration(
-            configuration.additionalConfig
-        )
+        applyAdditionalConfiguration(configuration.additionalConfig)
 
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initializeLogsFeature(
-            configuration.logsConfig,
-            appContext
-        )
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initializeTracingFeature(
-            configuration.tracesConfig,
-            appContext
-        )
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initializeRumFeature(
-            configuration.rumConfig,
-            appContext
-        )
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initializeCrashReportFeature(
-            configuration.crashReportConfig,
-            appContext
-        )
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initializeInternalLogsFeature(
-            configuration.internalLogsConfig,
-            appContext
-        )
+        initializeLogsFeature(configuration.logsConfig, appContext)
+        initializeTracingFeature(configuration.tracesConfig, appContext);
+        initializeRumFeature(configuration.rumConfig, appContext)
+        initializeCrashReportFeature(configuration.crashReportConfig, appContext)
+        initializeInternalLogsFeature(configuration.internalLogsConfig, appContext)
 
         CoreFeature.ndkCrashHandler.handleNdkCrash(
             LogsFeature.persistenceStrategy.getWriter(),
             RumFeature.persistenceStrategy.getWriter()
         )
 
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setupLifecycleMonitorCallback(
-            appContext
-        )
+        setupLifecycleMonitorCallback(appContext)
 
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialized.set(true)
+        initialized.set(true)
 
         // Issue #154 (“Thread starting during runtime shutdown”)
         // Make sure we stop Datadog when the Runtime shuts down
-        Runtime.getRuntime()
-            .addShutdownHook(
-                Thread(Runnable { _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.stop() },
-                    _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.SHUTDOWN_THREAD
-                )
-            )
+        Runtime.getRuntime().addShutdownHook(Thread(Runnable { stop() }, SHUTDOWN_THREAD))
     }
 
     /**
@@ -136,7 +106,7 @@ object Datadog {
      */
     @JvmStatic
     fun isInitialized(): Boolean {
-        return _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialized.get()
+        return initialized.get()
     }
 
     // endregion
@@ -158,15 +128,15 @@ object Datadog {
     // Stop all Datadog work (for test purposes).
     @Suppress("unused")
     private fun stop() {
-        if (_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialized.get()) {
+        if (initialized.get()) {
             LogsFeature.stop()
             TracesFeature.stop()
             RumFeature.stop()
             CrashReportsFeature.stop()
             CoreFeature.stop()
             InternalLogsFeature.stop()
-            _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isDebug = false
-            _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialized.set(false)
+            isDebug = false
+            initialized.set(false)
         }
     }
 
@@ -178,7 +148,7 @@ object Datadog {
     // method is mainly for test purposes.
     @Suppress("unused")
     private fun flushAndShutdownExecutors() {
-        if (_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialized.get()) {
+        if (initialized.get()) {
             (GlobalRum.get() as? DatadogRumMonitor)?.let {
                 it.stopKeepAliveCallback()
                 it.drainExecutorService()
@@ -205,7 +175,7 @@ object Datadog {
      */
     @JvmStatic
     fun setVerbosity(level: Int) {
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.libraryVerbosity = level
+        libraryVerbosity = level
     }
 
     /**
@@ -283,7 +253,7 @@ object Datadog {
     ) {
         if (configuration != null) {
             if (CoreFeature.rumApplicationId.isNullOrBlank()) {
-                devLogger.w(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.WARNING_MESSAGE_APPLICATION_ID_IS_NULL)
+                devLogger.w(WARNING_MESSAGE_APPLICATION_ID_IS_NULL)
             }
             RumFeature.initialize(appContext, configuration)
         }
@@ -304,13 +274,13 @@ object Datadog {
         // NOTE: be careful with the logic in this method - it is a part of initialization sequence,
         // so some things may yet not be initialized -> not accessible, some things may already be
         // initialized and be not mutable anymore
-        additionalConfiguration[_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.DD_SOURCE_TAG]?.let {
+        additionalConfiguration[DD_SOURCE_TAG]?.let {
             if (it is String && it.isNotBlank()) {
                 CoreFeature.sourceName = it
             }
         }
 
-        additionalConfiguration[_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.DD_SDK_VERSION_TAG]?.let {
+        additionalConfiguration[DD_SDK_VERSION_TAG]?.let {
             if (it is String && it.isNotBlank()) {
                 CoreFeature.sdkVersion = it
             }
@@ -319,11 +289,11 @@ object Datadog {
 
     @Suppress("ThrowingInternalException")
     private fun validateEnvironmentName(envName: String): Boolean {
-        if (!envName.matches(Regex(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.ENV_NAME_VALIDATION_REG_EX))) {
-            if (_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isDebug) {
-                throw IllegalArgumentException(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.MESSAGE_ENV_NAME_NOT_VALID)
+        if (!envName.matches(Regex(ENV_NAME_VALIDATION_REG_EX))) {
+            if (isDebug) {
+                throw IllegalArgumentException(MESSAGE_ENV_NAME_NOT_VALID)
             } else {
-                devLogger.e(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.MESSAGE_ENV_NAME_NOT_VALID)
+                devLogger.e(MESSAGE_ENV_NAME_NOT_VALID)
                 return false
             }
         }

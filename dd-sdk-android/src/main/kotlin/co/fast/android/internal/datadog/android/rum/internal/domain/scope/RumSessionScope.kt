@@ -171,7 +171,7 @@ internal class RumSessionScope(
                 val diffMs = SystemClock.elapsedRealtime() - Process.getStartElapsedRealtime()
                 System.nanoTime() - TimeUnit.MILLISECONDS.toNanos(diffMs)
             }
-            else -> _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.startupTimeNs
+            else -> Datadog.startupTimeNs
         }
     }
 

@@ -62,7 +62,7 @@ internal class WorkManagerUtilsTest {
     fun `set up`(forge: Forge) {
         mockChoreographerInstance()
 
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(
+        Datadog.initialize(
             appContext.mockInstance,
             Credentials(
                 forge.anHexadecimalString(),
@@ -91,7 +91,7 @@ internal class WorkManagerUtilsTest {
 
     @AfterEach
     fun `tear down`() {
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
+        Datadog.invokeMethod("stop")
         WorkManagerImpl::class.java.setStaticValue("sDefaultInstance", null)
     }
 

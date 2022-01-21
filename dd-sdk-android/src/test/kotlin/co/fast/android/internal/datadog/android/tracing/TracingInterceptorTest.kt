@@ -148,7 +148,7 @@ internal open class TracingInterceptorTest {
     @BeforeEach
     fun `set up`(forge: Forge) {
         mockDevLogHandler = mockDevLogHandler()
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setVerbosity(Log.VERBOSE)
+        Datadog.setVerbosity(Log.VERBOSE)
 
         whenever(mockTracer.buildSpan(TracingInterceptor.SPAN_NAME)) doReturn mockSpanBuilder
         whenever(mockLocalTracer.buildSpan(TracingInterceptor.SPAN_NAME)) doReturn mockSpanBuilder

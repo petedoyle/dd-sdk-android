@@ -52,7 +52,7 @@ internal class UploadStatusTest {
     fun `set up`(forge: Forge) {
         mockLogger = Logger(mockLogHandler)
         fakeContext = forge.anAlphabeticalString()
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setVerbosity(Log.VERBOSE)
+        Datadog.setVerbosity(Log.VERBOSE)
     }
 
     @Test

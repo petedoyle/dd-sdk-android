@@ -503,7 +503,7 @@ internal class DatadogLogHandlerTest {
     @Test
     fun `it will add the span id and trace id if we active an active tracer`(forge: Forge) {
         // Given
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(
+        Datadog.initialize(
             appContext.mockInstance,
             Credentials(
                 forge.anAlphabeticalString(),
@@ -541,7 +541,7 @@ internal class DatadogLogHandlerTest {
                 .containsEntry(LogAttributes.DD_TRACE_ID, tracer.traceId)
                 .containsEntry(LogAttributes.DD_SPAN_ID, tracer.spanId)
         }
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
+        Datadog.invokeMethod("stop")
     }
 
     @Test
@@ -568,7 +568,7 @@ internal class DatadogLogHandlerTest {
     @Test
     fun `it will add the Rum context`(forge: Forge) {
         // Given
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(
+        Datadog.initialize(
             appContext.mockInstance,
             Credentials(
                 forge.anAlphabeticalString(),
@@ -607,7 +607,7 @@ internal class DatadogLogHandlerTest {
                 .containsEntry(LogAttributes.RUM_VIEW_ID, rumMonitor.context.viewId)
                 .containsEntry(LogAttributes.RUM_ACTION_ID, rumMonitor.context.actionId)
         }
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
+        Datadog.invokeMethod("stop")
     }
 
     @Test

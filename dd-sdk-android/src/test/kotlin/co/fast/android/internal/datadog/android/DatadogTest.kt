@@ -111,9 +111,9 @@ internal class DatadogTest {
 
     @AfterEach
     fun `tear down`() {
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isDebug = false
+        Datadog.isDebug = false
         try {
-            _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
+            Datadog.invokeMethod("stop")
         } catch (e: IllegalStateException) {
             // nevermind
         }
@@ -122,7 +122,7 @@ internal class DatadogTest {
     @Test
     fun `𝕄 do nothing 𝕎 stop() without initialize`() {
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.invokeMethod("stop")
+        Datadog.invokeMethod("stop")
 
         // Then
         verifyZeroInteractions(appContext.mockInstance)
@@ -139,7 +139,7 @@ internal class DatadogTest {
         CoreFeature.userInfoProvider = mockUserInfoProvider
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setUserInfo(id, name, email)
+        Datadog.setUserInfo(id, name, email)
 
         // Then
         verify(mockUserInfoProvider).setUserInfo(
@@ -162,8 +162,8 @@ internal class DatadogTest {
         CoreFeature.userInfoProvider = mockUserInfoProvider
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setUserInfo(id, name, email)
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setUserInfo()
+        Datadog.setUserInfo(id, name, email)
+        Datadog.setUserInfo()
 
         // Then
         verify(mockUserInfoProvider).setUserInfo(
@@ -194,8 +194,8 @@ internal class DatadogTest {
         ).build()
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
-        val initialized = _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isInitialized()
+        Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
+        val initialized = Datadog.isInitialized()
 
         // Then
         assertThat(initialized).isTrue()
@@ -213,7 +213,7 @@ internal class DatadogTest {
         ).build()
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
+        Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
 
         // Then
         assertThat(CoreFeature.trackingConsentProvider.getConsent()).isEqualTo(fakeConsent)
@@ -227,7 +227,7 @@ internal class DatadogTest {
         CoreFeature.trackingConsentProvider = mockedConsentProvider
 
         // WHEN
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setTrackingConsent(fakeConsent)
+        Datadog.setTrackingConsent(fakeConsent)
 
         // THEN
         verify(CoreFeature.trackingConsentProvider).setConsent(fakeConsent)
@@ -255,11 +255,11 @@ internal class DatadogTest {
         ).build()
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
-        val initialized = _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isInitialized()
+        Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
+        val initialized = Datadog.isInitialized()
 
         // Then
-        verify(mockDevLogHandler).handleLog(AndroidLog.ERROR, _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.MESSAGE_ENV_NAME_NOT_VALID)
+        verify(mockDevLogHandler).handleLog(AndroidLog.ERROR, Datadog.MESSAGE_ENV_NAME_NOT_VALID)
         assertThat(initialized).isFalse()
     }
 
@@ -280,14 +280,14 @@ internal class DatadogTest {
 
         // When
         assertThatThrownBy {
-            _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
+            Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
         }.isInstanceOf(java.lang.IllegalArgumentException::class.java)
     }
 
     @Test
     fun `𝕄 return false 𝕎 isInitialized()`() {
         // When
-        val initialized = _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isInitialized()
+        val initialized = Datadog.isInitialized()
 
         // Then
         assertThat(initialized).isFalse()
@@ -305,7 +305,7 @@ internal class DatadogTest {
         ).build()
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
+        Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
 
         // Then
         assertThat(CoreFeature.initialized.get()).isTrue()
@@ -333,7 +333,7 @@ internal class DatadogTest {
         ).build()
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
+        Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
 
         // Then
         assertThat(CoreFeature.initialized.get()).isTrue()
@@ -356,7 +356,7 @@ internal class DatadogTest {
         ).build()
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
+        Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
 
         // Then
         assertThat(CoreFeature.initialized.get()).isTrue()
@@ -367,7 +367,7 @@ internal class DatadogTest {
         assertThat(InternalLogsFeature.initialized.get()).isFalse()
         verify(mockDevLogHandler).handleLog(
             android.util.Log.WARN,
-            _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.WARNING_MESSAGE_APPLICATION_ID_IS_NULL
+            Datadog.WARNING_MESSAGE_APPLICATION_ID_IS_NULL
         )
     }
 
@@ -383,7 +383,7 @@ internal class DatadogTest {
         ).build()
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
+        Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
 
         // Then
         assertThat(CoreFeature.initialized.get()).isTrue()
@@ -394,7 +394,7 @@ internal class DatadogTest {
         assertThat(InternalLogsFeature.initialized.get()).isFalse()
         verify(mockDevLogHandler, never()).handleLog(
             android.util.Log.WARN,
-            _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.WARNING_MESSAGE_APPLICATION_ID_IS_NULL
+            Datadog.WARNING_MESSAGE_APPLICATION_ID_IS_NULL
         )
     }
 
@@ -415,7 +415,7 @@ internal class DatadogTest {
             .build()
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
+        Datadog.initialize(appContext.mockInstance, credentials, configuration, fakeConsent)
 
         // Then
         assertThat(CoreFeature.initialized.get()).isTrue()
@@ -437,12 +437,12 @@ internal class DatadogTest {
             crashReportsEnabled = true,
             rumEnabled = true
         )
-            .setAdditionalConfiguration(mapOf(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.DD_SOURCE_TAG to source))
+            .setAdditionalConfiguration(mapOf(Datadog.DD_SOURCE_TAG to source))
             .build()
         val credentials = Credentials(fakeToken, fakeEnvName, fakeVariant, null, null)
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
+        Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
 
         // Then
         assertThat(CoreFeature.sourceName).isEqualTo(source)
@@ -469,12 +469,12 @@ internal class DatadogTest {
             crashReportsEnabled = true,
             rumEnabled = true
         )
-            .setAdditionalConfiguration(mapOf(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.DD_SOURCE_TAG to forge.aWhitespaceString()))
+            .setAdditionalConfiguration(mapOf(Datadog.DD_SOURCE_TAG to forge.aWhitespaceString()))
             .build()
         val credentials = Credentials(fakeToken, fakeEnvName, fakeVariant, null, null)
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
+        Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
 
         // Then
         assertThat(CoreFeature.sourceName).isEqualTo(CoreFeature.DEFAULT_SOURCE_NAME)
@@ -501,12 +501,12 @@ internal class DatadogTest {
             crashReportsEnabled = true,
             rumEnabled = true
         )
-            .setAdditionalConfiguration(mapOf(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.DD_SOURCE_TAG to forge.anInt()))
+            .setAdditionalConfiguration(mapOf(Datadog.DD_SOURCE_TAG to forge.anInt()))
             .build()
         val credentials = Credentials(fakeToken, fakeEnvName, fakeVariant, null, null)
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
+        Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
 
         // Then
         assertThat(CoreFeature.sourceName).isEqualTo(CoreFeature.DEFAULT_SOURCE_NAME)
@@ -538,7 +538,7 @@ internal class DatadogTest {
         val credentials = Credentials(fakeToken, fakeEnvName, fakeVariant, null, null)
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
+        Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
 
         // Then
         assertThat(CoreFeature.sourceName).isEqualTo(CoreFeature.DEFAULT_SOURCE_NAME)
@@ -565,12 +565,12 @@ internal class DatadogTest {
             crashReportsEnabled = true,
             rumEnabled = true
         )
-            .setAdditionalConfiguration(mapOf(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.DD_SDK_VERSION_TAG to sdkVersion))
+            .setAdditionalConfiguration(mapOf(Datadog.DD_SDK_VERSION_TAG to sdkVersion))
             .build()
         val credentials = Credentials(fakeToken, fakeEnvName, fakeVariant, null, null)
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
+        Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
 
         // Then
         assertThat(CoreFeature.sdkVersion).isEqualTo(sdkVersion)
@@ -598,13 +598,13 @@ internal class DatadogTest {
             rumEnabled = true
         )
             .setAdditionalConfiguration(
-                mapOf(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.DD_SDK_VERSION_TAG to forge.aWhitespaceString())
+                mapOf(Datadog.DD_SDK_VERSION_TAG to forge.aWhitespaceString())
             )
             .build()
         val credentials = Credentials(fakeToken, fakeEnvName, fakeVariant, null, null)
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
+        Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
 
         // Then
         assertThat(CoreFeature.sdkVersion).isEqualTo(CoreFeature.DEFAULT_SDK_VERSION)
@@ -631,12 +631,12 @@ internal class DatadogTest {
             crashReportsEnabled = true,
             rumEnabled = true
         )
-            .setAdditionalConfiguration(mapOf(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.DD_SDK_VERSION_TAG to forge.anInt()))
+            .setAdditionalConfiguration(mapOf(Datadog.DD_SDK_VERSION_TAG to forge.anInt()))
             .build()
         val credentials = Credentials(fakeToken, fakeEnvName, fakeVariant, null, null)
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
+        Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
 
         // Then
         assertThat(CoreFeature.sdkVersion).isEqualTo(CoreFeature.DEFAULT_SDK_VERSION)
@@ -668,7 +668,7 @@ internal class DatadogTest {
         val credentials = Credentials(fakeToken, fakeEnvName, fakeVariant, null, null)
 
         // When
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
+        Datadog.initialize(appContext.mockInstance, credentials, config, TrackingConsent.GRANTED)
 
         // Then
         assertThat(CoreFeature.sdkVersion).isEqualTo(CoreFeature.DEFAULT_SDK_VERSION)

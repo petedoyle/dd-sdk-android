@@ -327,7 +327,7 @@ internal class RumSessionScopeTest {
     @Test
     fun `M log warning W handleEvent() without child scope`() {
         // Given
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setVerbosity(Log.VERBOSE)
+        Datadog.setVerbosity(Log.VERBOSE)
 
         // When
         val result = testedScope.handleEvent(mockEvent, mockWriter)
@@ -463,7 +463,7 @@ internal class RumSessionScopeTest {
             verify(childView).handleEvent(capture(), same(mockWriter))
 
             val event = firstValue as RumRawEvent.ApplicationStarted
-            assertThat(event.applicationStartupNanos).isEqualTo(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.startupTimeNs)
+            assertThat(event.applicationStartupNanos).isEqualTo(Datadog.startupTimeNs)
         }
         verifyZeroInteractions(mockWriter)
     }
@@ -504,7 +504,7 @@ internal class RumSessionScopeTest {
             verify(childView).handleEvent(capture(), same(mockWriter))
 
             val event = firstValue as RumRawEvent.ApplicationStarted
-            assertThat(event.applicationStartupNanos).isEqualTo(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.startupTimeNs)
+            assertThat(event.applicationStartupNanos).isEqualTo(Datadog.startupTimeNs)
         }
         verifyZeroInteractions(mockWriter)
     }
@@ -526,7 +526,7 @@ internal class RumSessionScopeTest {
             verify(childView, times(2)).handleEvent(capture(), same(mockWriter))
 
             val event = firstValue as RumRawEvent.ApplicationStarted
-            assertThat(event.applicationStartupNanos).isEqualTo(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.startupTimeNs)
+            assertThat(event.applicationStartupNanos).isEqualTo(Datadog.startupTimeNs)
             val event2 = lastValue as RumRawEvent.ApplicationStarted
             assertThat(event2.applicationStartupNanos).isGreaterThanOrEqualTo(resetNanos)
         }

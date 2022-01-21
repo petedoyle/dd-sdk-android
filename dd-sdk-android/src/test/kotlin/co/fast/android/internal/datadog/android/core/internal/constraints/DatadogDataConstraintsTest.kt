@@ -43,7 +43,7 @@ internal class DatadogDataConstraintsTest {
 
     @BeforeEach
     fun `set up`() {
-        _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.setVerbosity(Log.VERBOSE)
+        Datadog.setVerbosity(Log.VERBOSE)
         // we need to set the Build.MODEL to null, to override the setup
         Build::class.java.setStaticValue("MODEL", null)
 

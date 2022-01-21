@@ -29,8 +29,8 @@ internal class UploadWorker(
     // region Worker
 
     override fun doWork(): Result {
-        if (!_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.isInitialized()) {
-            devLogger.e(_root_ide_package_.co.fast.android.internal.datadog.android.Datadog.MESSAGE_NOT_INITIALIZED)
+        if (!Datadog.isInitialized()) {
+            devLogger.e(Datadog.MESSAGE_NOT_INITIALIZED)
             return Result.success()
         }
 

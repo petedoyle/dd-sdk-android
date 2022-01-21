@@ -89,7 +89,7 @@ internal class LoggerBuilderTest {
 
         assertThat(handler).isInstanceOf(NoOpLogHandler::class.java)
         verify(mockDevLogHandler)
-            .handleLog(AndroidLog.ERROR, _root_ide_package_.co.fast.android.internal.datadog.android.Datadog.MESSAGE_NOT_INITIALIZED)
+            .handleLog(AndroidLog.ERROR, Datadog.MESSAGE_NOT_INITIALIZED)
     }
 
     @Test
