@@ -463,7 +463,7 @@ class PokoGenerator(
     // endregion
 
     companion object {
-        const val EXTENSION_FUNCTIONS_PACKAGE_NAME = "com.datadog.android.core.internal.utils"
+        const val EXTENSION_FUNCTIONS_PACKAGE_NAME = "co.fast.android.internal.datadog.android.core.internal.utils"
         const val TO_JSON_ELEMENT_EXTENSION_FUNCTION = "toJsonElement"
         const val ENUM_CONSTRUCTOR_JSON_VALUE_NAME = "jsonValue"
         const val ADDITIONAL_PROPERTIES_NAME = "additionalProperties"
