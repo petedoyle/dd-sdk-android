@@ -56,8 +56,8 @@ internal class FeatureFileOrchestrator(
 
     companion object {
         internal const val VERSION = 1
-        private const val PENDING_DIR = "dd-%s-pending-v$VERSION"
-        private const val GRANTED_DIR = "dd-%s-v$VERSION"
+        private const val PENDING_DIR = "fast-dd-%s-pending-v$VERSION"
+        private const val GRANTED_DIR = "fast-dd-%s-v$VERSION"
 
         private val PERSISTENCE_CONFIG = FilePersistenceConfig()
     }
